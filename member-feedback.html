@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Feedback</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body class="member-feedback">
+
+  <!-- Header -->
+  <header class="bg-header">
+    <div class="container d-flex justify-content-between align-items-center header-outer">
+      <div class="d-flex justify-content-start align-items-center header-left">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="d-flex align-items-center">
+            <a class="home-icon d-lg-block d-none" href="index-before-login.html">
+              <img src="./images/home-icon.svg" alt="Home" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Heritage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="club-tour.html">Club Tour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Parties, Conferences and Events</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Venue</a>
+                          <div class="submenu_outer">
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">AC Shamiana</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Balmer Lawrie Lounge & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Banquet Hall & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Bridge Room</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Club Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Far Pavilion</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Main Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Pantiles</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Patio 1ST Floor Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Veedol 100 Hall</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Rules</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Available Facilities on Request</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Request</a>
+                        </li>                        
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="sports.html" class="dropdown-item dropdown-toggle">Sports</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Golf</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Table Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Pickleball</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Squash</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Equestrian</a>
+                        </li>                      
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Swimming</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Gym</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Billiard</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Darts</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Bridge</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Food & Beverage</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">18th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">South Verandah</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Belvedere Dining Hall</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">1895 Oudh</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">9th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Cruickshank Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Club House Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Indigo Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Johnnie Walker Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Flurys Cake Shop</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Don Gloavani</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Other Facilities</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Library</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Saloon</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Spa</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Proshop</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Accommodation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="logo">
+        <a href="index-before-login.html">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+      </div>
+      <div class="d-flex justify-content-end align-items-center header-right">
+        <div class="affiliations">
+          <a href="javascript:void(0)">Affiliations</a>
+        </div>
+        <ul class="right-nav">
+          <li>
+            <a href="javascript:void(0)" class="profile-btn dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span><img src="./images/user-icon.svg" alt="" /></span>Jhon Doe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/dashboard-icon.svg" alt=""></span>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/my-profile.svg" alt=""></span>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/change-pass.svg" alt=""></span>
+                  Change Password
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/logout.svg" alt=""></span>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="payment-btn">Quick Payment</a>
+          </li>
+        </ul>
+        <button class="sidemenu-toggler">
+          <!-- <img src="./images/menu-icon.svg" alt="" /> -->
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"/>
+          </svg>
+        </button>
+        <div class="side-menu">
+          <div class="close-outer">
+            <button class="sidemenu-close">
+              <img src="./images/close-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-top">
+              <div class="member-login0outer">
+                <div class="member-profile">
+                  <div class="profile-left">
+                    <div class="profile-image">
+                      <img src="./images/avatars.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="profile-contain">
+                    <!-- <h5>Welcome</h5> -->
+                    <button type="submit" class="btn btn-primary memberLogin">Member’s Login</button>
+                  </div>
+                </div> 
+              </div>
+              <div class="search-outer">
+                <input type="search" class="serch-field" placeholder="Search Options" />
+              </div>
+            </div>
+            <div class="sidebar-bottom">
+              <ul class="item-list">
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/home-2.svg" alt="" /></span> Home
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/courthouse.svg" alt="" /></span> Heritage
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/flag-2.svg" alt="" /></span> Golf
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/ranking.svg" alt="" /></span> Other Sporting Activities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clipboard-tick.svg" alt="" /></span> Other Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/building-3.svg" alt="" /></span> Accommodation
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/house-2.svg" alt="" /></span> Party & Conference
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/shop.svg" alt="" /></span> Proshop
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clock.svg" alt="" /></span> Timing for Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/reserve.svg" alt="" /></span> Food & Beverages
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/radar-2.svg" alt="" /></span> Club Tour
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/gallery.svg" alt="" /></span> Event Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/message-text.svg" alt="" /></span> Affiliation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rightbar-overlay" data-bs-toggle="collapse" data-bs-target="#sideNavbar" aria-expanded="true"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="banner-slider">
+      <div class="slider-item"><img src="./images/subBanner/MemberfeedbackBanner1.webp" alt="Slide 1"></div>
+      <div class="slider-item"><img src="./images/subBanner/MemberfeedbackBanner2.webp" alt="Slide 2"></div>
+    </section>
+
+    <div class="banner-inner-content">
+      <div class="container">
+        <ul class="bread-come">
+          <li>
+            <a href="javascript:void(0)">Home</a>
+          </li>
+          <li>Feedback Register</li>
+        </ul>
+      </div>
+    </div>
+    <section class="sport-details pt-0">
+      <div class="container">
+        <div class="sport-details-plate">
+          <div class="sport-nav">
+            <ul>
+              <li>
+                <a href="#Suggestions">Suggestions</a>
+              </li>
+              <li>
+                <a href="#Rating">Rating</a>
+              </li>
+              <li>
+                <a href="#Polling">Polling</a>
+              </li>
+              <li>
+                <a href="#History">History</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sport-nav-content">
+            <div class="section" id="Suggestions">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Member Suggestion</h4>
+                </div>
+                <div class="section-description">
+                  <div class="inner-form login-show-box">
+                    <form>
+                      <ul class="inner-form-ul">                        
+                        <li>
+                          <div class="form-row box-focus">
+                            <div class="labelHead">Facility</div>
+                            <select class="custom-selectpicker" data-placeholder="Select Department">
+                              <option value="" disabled selected>Select Department</option>
+                              <option value="1">18th Shamiana</option>
+                              <option value="2">9th Shamiana</option>
+                              <option value="3">AC Shamiana (Auditorium)</option>
+                              <option value="4">Ayurveda Massage Parlour</option>
+                              <option value="5">Balmer Lawrie Hall</option>
+                              <option value="6">Belvedere</option>
+                              <option value="7">Billiards</option>
+                              <option value="8">Bridge</option>
+                              <option value="9">Club House Lounge</option>
+                              <option value="10">Cruickshank Bar</option>
+                              <option value="11">Darts</option>
+                              <option value="12">Entertainment</option>
+                              <option value="13">Equestrian</option>
+                              <option value="14">Far Pavilion</option>
+                              <option value="15">Flurys</option>
+                              <option value="16">General</option>
+                              <option value="17">Gentlemen's Changing Room</option>
+                              <option value="18">Golf</option>
+                              <option value="19">Golf Driving Range</option>
+                              <option value="20">Gravel</option>
+                              <option value="21">Gymnasium</option>
+                              <option value="22">Indigo Bar</option>
+                              <option value="23">Johnnie Walker Bar</option>
+                              <option value="24">L’Oreal Parlor</option>
+                              <option value="25">Ladies' Changing Room</option>
+                              <option value="26">Library</option>
+                              <option value="27">Oudh 1895</option>
+                              <option value="28">Rooms Division</option>
+                              <option value="29">South Verandah</option>
+                              <option value="30">Spencers</option>
+                              <option value="31">Squash</option>
+                              <option value="32">Swimming</option>
+                              <option value="33">Table Tennis</option>
+                              <option value="34">Tennis</option>
+                              <option value="35">Tolly Shop</option>
+                              <option value="36">Yule Hall</option>
+                            </select>
+                          </div>
+                        </li>                        
+                        <li>
+                          <div class="form-row browse-row">
+                            <div class="labelHead">Attach Image</div>
+                            <div class="outer-box">
+                              <input type="file" id="upload_statement" class="file-border" />                                                    
+                              <span class="upload-btn" id="upload-btn"></span>
+                            </div>
+                            <p>Upload only JPG image upto 2MB size</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-row browse-row">
+                            <div class="labelHead">Attach Image</div>
+                            <div class="outer-box">
+                              <input type="file" id="upload_statement2" class="file-border" />                                                    
+                              <span class="upload-btn" id="upload-btn2"></span>
+                            </div>
+                            <p>Upload only JPG image upto 2MB size</p>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-row browse-row">
+                            <div class="labelHead">Attach Image</div>
+                            <div class="outer-box">
+                              <input type="file" id="upload_statement3" class="file-border" />                                                    
+                              <span class="upload-btn" id="upload-btn3"></span>
+                            </div>
+                            <p>Upload only JPG image upto 2MB size</p>
+                          </div>
+                        </li>
+                        <li class="wide">
+                          <div class="form-row box-focus">
+                            <div class="labelHead">Comments</div>
+                            <div class="outer-box">
+                              <label for="Comments">Please enter comments</label>
+                              <textarea id="Comments" class="form-control"></textarea>
+                            </div>                            
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-row box-focus">
+                            <label for="YourEmailId">Your Email Id</label>
+                            <input id="YourEmailId" type="tel" class="form-control" placeholder="" required />
+                          </div> 
+                        </li>
+                        <li>
+                          <div class="form-row box-focus">
+                            <label for="MobileNumber">Your Contact No</label>
+                            <input id="MobileNumber" type="number" class="form-control" placeholder="" required />
+                          </div>
+                        </li>                     
+                        <li>
+                          <div class="login-btn-outer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>    
+                        </li>
+                      </ul>        
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="Rating">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Member Ratings</h4>
+                </div>
+                <div class="section-description">
+                  <div class="inner-form login-show-box">
+                    <form>
+                      <ul class="inner-form-ul">                        
+                        <li>
+                          <div class="form-row box-focus">
+                            <div class="labelHead">Facility</div>
+                            <select class="custom-selectpicker" data-placeholder="Select Department">
+                              <option value="" disabled selected>Select Department</option>
+                              <option value="1">18th Shamiana</option>
+                              <option value="2">9th Shamiana</option>
+                              <option value="3">AC Shamiana (Auditorium)</option>
+                              <option value="4">Ayurveda Massage Parlour</option>
+                              <option value="5">Balmer Lawrie Hall</option>
+                              <option value="6">Belvedere</option>
+                              <option value="7">Billiards</option>
+                              <option value="8">Bridge</option>
+                              <option value="9">Club House Lounge</option>
+                              <option value="10">Cruickshank Bar</option>
+                              <option value="11">Darts</option>
+                              <option value="12">Entertainment</option>
+                              <option value="13">Equestrian</option>
+                              <option value="14">Far Pavilion</option>
+                              <option value="15">Flurys</option>
+                              <option value="16">General</option>
+                              <option value="17">Gentlemen's Changing Room</option>
+                              <option value="18">Golf</option>
+                              <option value="19">Golf Driving Range</option>
+                              <option value="20">Gravel</option>
+                              <option value="21">Gymnasium</option>
+                              <option value="22">Indigo Bar</option>
+                              <option value="23">Johnnie Walker Bar</option>
+                              <option value="24">L’Oreal Parlor</option>
+                              <option value="25">Ladies' Changing Room</option>
+                              <option value="26">Library</option>
+                              <option value="27">Oudh 1895</option>
+                              <option value="28">Rooms Division</option>
+                              <option value="29">South Verandah</option>
+                              <option value="30">Spencers</option>
+                              <option value="31">Squash</option>
+                              <option value="32">Swimming</option>
+                              <option value="33">Table Tennis</option>
+                              <option value="34">Tennis</option>
+                              <option value="35">Tolly Shop</option>
+                              <option value="36">Yule Hall</option>
+                            </select>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-row box-focus">
+                            <div class="labelHead">Date of Use</div>
+                            <div class="outer-box">
+                              <input id="useDate" type="date" class="form-control" placeholder="" required />
+                            </div>
+                          </div>
+                        </li> 
+                        <li class="wide">
+                          <div class="form-row box-focus">
+                            <div class="labelHead">Comments</div>
+                            <div class="outer-box">
+                              <label for="CommentsRating">Please enter comments</label>
+                              <textarea id="CommentsRating" class="form-control"></textarea>
+                            </div>                            
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-row box-focus">
+                            <div class="labelHead">Ratings</div>
+                            <div class="checkLabel">
+                              <input type="radio" name="Ratings" id="Ratings1" class="radio" checked />
+                              <label for="Ratings1">Excellent</label>
+                            </div>   
+                            <div class="checkLabel">
+                              <input type="radio" name="Ratings" id="Ratings2" class="radio" />
+                              <label for="Ratings2">Very Good</label>
+                            </div>  
+                            <div class="checkLabel">
+                              <input type="radio" name="Ratings" id="Ratings3" class="radio" />
+                              <label for="Ratings3">Good</label>
+                            </div>   
+                            <div class="checkLabel">
+                              <input type="radio" name="Ratings" id="Ratings4" class="radio" />
+                              <label for="Ratings4">Fair</label>
+                            </div> 
+                            <div class="checkLabel">
+                              <input type="radio" name="Ratings" id="Ratings5" class="radio" />
+                              <label for="Ratings5">Poor</label>
+                            </div>                  
+                          </div>
+                        </li>     
+                        <li>
+                          <div class="form-row box-focus">
+                            <div class="labelHead">Detail Ratings</div>
+                            <div class="checkLabel">
+                              <input type="radio" name="DetailRatings" id="DetailRatings1" class="radio" checked />
+                              <label for="DetailRatings1">Yes</label>
+                            </div>   
+                            <div class="checkLabel">
+                              <input type="radio" name="DetailRatings" id="DetailRatings2" class="radio" />
+                              <label for="DetailRatings2">No</label>
+                            </div>                  
+                          </div>
+                        </li>                
+                        <li>
+                          <div class="login-btn-outer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>    
+                        </li>
+                      </ul>        
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="Polling">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Member Polling</h4>
+                </div>
+                <div class="section-description">
+                  <div class="scroll_table">
+                    <table class="payment-table-list">
+                      <tr>
+                        <th>Sl. No.</th>
+                        <th>Topic / Particular</th>
+                        <th>Closing Date</th>
+                        <th>Action</th>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="History">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">History</h4>
+                </div>
+                <div class="tab">
+                  <div class="listTab" data-aos="fade-up">
+                    <ul>
+                      <li class="active" data-id="Suggestion">Suggestion</li>
+                      <li data-id="Rating">Rating</li>
+                      <li data-id="Polling">Polling</li>
+                    </ul>
+                  </div>
+
+                  <div class="diewDetails active" id="Suggestion" data-aos="fade-up">
+                    <div class="scroll_table">
+                      <table class="payment-table-list">
+                        <tr>
+                          <th>Date</th>
+                          <th>Suggestion No.</th>
+                          <th>Facility Name</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="diewDetails" id="Rating" data-aos="fade-up">
+                    <div class="scroll_table">
+                      <table class="payment-table-list">
+                        <tr>
+                          <th>Date</th>
+                          <th>Rating No.</th>
+                          <th>Facility Name</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="diewDetails" id="Polling" data-aos="fade-up">
+                    <div class="scroll_table">
+                      <table class="payment-table-list">
+                        <tr>
+                          <th>Date</th>
+                          <th>Polling No.</th>
+                          <th>Polling for</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                          <td>Dec 23, 2021</td>
+                          <td>5887</td>
+                          <td>This is a Test Poll</td>
+                          <td>
+                            <a href="#" class="btn btn-primary">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Dec 23, 2021</td>
+                          <td>6624</td>
+                          <td>This is second test poll</td>
+                          <td><a href="#" class="btn btn-primary">View</a></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>Copyright @ 2024 tollygungeclub. All Rights Reserved.</p>
+        <ul>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+          <li><a href="javascript:void(0)">Terms and Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a id="buttonBackTop">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <h4 class="txt">Please Wait...</h4>
+  </div>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="./js/custom.js"></script>
+  <script>
+    $(document).on(
+      'change',
+      '.file-border', 
+      function(){
+      var filename = this.value.split('\\').pop();
+      $(this).siblings('.upload-btn').html(filename);
+    });
+  </script>
+
+</body>
+
+</html>

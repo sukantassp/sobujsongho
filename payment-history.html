@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment History</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body class="payment-history">
+
+  <!-- Header -->
+  <header class="bg-header">
+    <div class="container d-flex justify-content-between align-items-center header-outer">
+      <div class="d-flex justify-content-start align-items-center header-left">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="d-flex align-items-center">
+            <a class="home-icon d-lg-block d-none" href="index-before-login.html">
+              <img src="./images/home-icon.svg" alt="Home" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Heritage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="club-tour.html">Club Tour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Parties, Conferences and Events</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Venue</a>
+                          <div class="submenu_outer">
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">AC Shamiana</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Balmer Lawrie Lounge & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Banquet Hall & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Bridge Room</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Club Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Far Pavilion</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Main Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Pantiles</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Patio 1ST Floor Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Veedol 100 Hall</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Rules</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Available Facilities on Request</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Request</a>
+                        </li>                        
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="sports.html" class="dropdown-item dropdown-toggle">Sports</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Golf</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Table Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Pickleball</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Squash</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Equestrian</a>
+                        </li>                      
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Swimming</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Gym</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Billiard</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Darts</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Bridge</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Food & Beverage</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">18th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">South Verandah</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Belvedere Dining Hall</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">1895 Oudh</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">9th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Cruickshank Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Club House Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Indigo Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Johnnie Walker Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Flurys Cake Shop</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Don Gloavani</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Other Facilities</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Library</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Saloon</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Spa</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Proshop</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Accommodation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="logo">
+        <a href="index-before-login.html">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+      </div>
+      <div class="d-flex justify-content-end align-items-center header-right">
+        <div class="affiliations">
+          <a href="javascript:void(0)">Affiliations</a>
+        </div>
+        <ul class="right-nav">
+          <li>
+            <a href="javascript:void(0)" class="profile-btn dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span><img src="./images/user-icon.svg" alt="" /></span>Jhon Doe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/dashboard-icon.svg" alt=""></span>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/my-profile.svg" alt=""></span>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/change-pass.svg" alt=""></span>
+                  Change Password
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/logout.svg" alt=""></span>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="payment-btn">Quick Payment</a>
+          </li>
+        </ul>
+        <button class="sidemenu-toggler">
+          <!-- <img src="./images/menu-icon.svg" alt="" /> -->
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"/>
+          </svg>
+        </button>
+        <div class="side-menu">
+          <div class="close-outer">
+            <button class="sidemenu-close">
+              <img src="./images/close-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-top">
+              <div class="member-login0outer">
+                <div class="member-profile">
+                  <div class="profile-left">
+                    <div class="profile-image">
+                      <img src="./images/avatars.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="profile-contain">
+                    <!-- <h5>Welcome</h5> -->
+                    <button type="submit" class="btn btn-primary memberLogin">Member’s Login</button>
+                  </div>
+                </div> 
+              </div>
+              <div class="search-outer">
+                <input type="search" class="serch-field" placeholder="Search Options" />
+              </div>
+            </div>
+            <div class="sidebar-bottom">
+              <ul class="item-list">
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/home-2.svg" alt="" /></span> Home
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/courthouse.svg" alt="" /></span> Heritage
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/flag-2.svg" alt="" /></span> Golf
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/ranking.svg" alt="" /></span> Other Sporting Activities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clipboard-tick.svg" alt="" /></span> Other Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/building-3.svg" alt="" /></span> Accommodation
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/house-2.svg" alt="" /></span> Party & Conference
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/shop.svg" alt="" /></span> Proshop
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clock.svg" alt="" /></span> Timing for Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/reserve.svg" alt="" /></span> Food & Beverages
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/radar-2.svg" alt="" /></span> Club Tour
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/gallery.svg" alt="" /></span> Event Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/message-text.svg" alt="" /></span> Affiliation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rightbar-overlay" data-bs-toggle="collapse" data-bs-target="#sideNavbar" aria-expanded="true"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="banner-slider">
+      <div class="slider-item"><img src="./images/subBanner/Payment1.png" alt="Slide 1"></div>
+      <div class="slider-item"><img src="./images/subBanner/Payment2.png" alt="Slide 2"></div>
+    </section>
+
+    <div class="banner-inner-content">
+      <div class="container">
+        <ul class="bread-come">
+          <li>
+            <a href="javascript:void(0)">Home</a>
+          </li>
+          <li>Payment History</li>
+        </ul>
+      </div>
+    </div>
+    <section class="affiliated-clubs">
+      <div class="container">
+        <div class="page-title">
+          <h4 data-aos="fade-up">Payment History</h4>          
+        </div>        
+      </div>
+    </section>
+
+    <section class="payment-history-outer pt-0">
+      <div class="container">
+        <div class="custom-table">
+          <table class="payment-table-list">       
+            <thead>
+              <tr>
+                <th>SL No</th>
+                <th>Transaction Id</th>
+                <th>Payment Id</th>                        
+                <th>Amount</th>
+                <th>Response</th>
+                <th>Date/Time</th>
+                <th>View Receipt</th>
+              </tr>	
+            </thead>             
+            <tbody>              		
+              <tr>
+                <td data-label="SL No">1</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">175687946427251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Failure</td>
+                <td data-label="Date/Time">
+                  <div class="date">03/09/2025</div>
+                  <div class="time">11:35:36</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">2</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">175464251627251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Aborted</td>
+                <td data-label="Date/Time">
+                  <div class="date">08/08/2025</div>
+                  <div class="time">14:12:21</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">3</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">175455770627251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Aborted</td>
+                <td data-label="Date/Time">
+                  <div class="date">07/08/2025</div>
+                  <div class="time">14:38:50</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">4</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">175310178227251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">21/07/2025</div>
+                  <div class="time">18:13:13</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">5</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">175256015227251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">15/07/2025</div>
+                  <div class="time">11:45:59</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">6</td>
+                <td data-label="Transaction Id">T04533</td>
+                <td data-label="Payment Id">174791864427251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">22/05/2025</div>
+                  <div class="time">18:27:51</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">7</td>
+                <td data-label="Transaction Id">T75988</td>
+                <td data-label="Payment Id">174714149027251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">13/05/2025</div>
+                  <div class="time">18:46:01</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">8</td>
+                <td data-label="Transaction Id">T80254</td>
+                <td data-label="Payment Id">174668092727251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">08/05/2025</div>
+                  <div class="time">10:49:53</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">9</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">174409924527251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Aborted</td>
+                <td data-label="Date/Time">
+                  <div class="date">08/04/2025</div>
+                  <div class="time">13:40:59</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">10</td>
+                <td data-label="Transaction Id">T00357</td>
+                <td data-label="Payment Id">174344857827251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">01/04/2025</div>
+                  <div class="time">00:56:47</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">11</td>
+                <td data-label="Transaction Id">T01856</td>
+                <td data-label="Payment Id">174274025727251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">23/03/2025</div>
+                  <div class="time">20:11:16</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">12</td>
+                <td data-label="Transaction Id">T94516</td>
+                <td data-label="Payment Id">174273948327251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">23/03/2025</div>
+                  <div class="time">19:58:20</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">13</td>
+                <td data-label="Transaction Id">T76248</td>
+                <td data-label="Payment Id">174273750127251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">23/03/2025</div>
+                  <div class="time">19:26:33</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">14</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">173986118127251</td>
+                <td data-label="Amount">10.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">18/02/2025</div>
+                  <div class="time">12:25:53</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">15</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">172820101027251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">06/10/2024</div>
+                  <div class="time">13:27:45</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">16</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">172336254227251</td>
+                <td data-label="Amount">123.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">11/08/2024</div>
+                  <div class="time">13:25:48</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">17</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">171324538527251</td>
+                <td data-label="Amount">10.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">16/04/2024</div>
+                  <div class="time">11:04:49</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">18</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">171239954127251</td>
+                <td data-label="Amount">10.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">06/04/2024</div>
+                  <div class="time">16:07:17</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">19</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">171238326627251</td>
+                <td data-label="Amount">10.00</td>
+                <td data-label="Response">Aborted</td>
+                <td data-label="Date/Time">
+                  <div class="date">06/04/2024</div>
+                  <div class="time">11:36:01</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">20</td>
+                <td data-label="Transaction Id">000000</td>
+                <td data-label="Payment Id">170436426427251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Failure</td>
+                <td data-label="Date/Time">
+                  <div class="date">04/01/2024</div>
+                  <div class="time">16:04:55</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">21</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">170436416327251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Aborted</td>
+                <td data-label="Date/Time">
+                  <div class="date">04/01/2024</div>
+                  <div class="time">16:03:00</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">22</td>
+                <td data-label="Transaction Id">T72349</td>
+                <td data-label="Payment Id">170436366927251</td>
+                <td data-label="Amount">100.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">04/01/2024</div>
+                  <div class="time">15:55:09</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">23</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">170391717027251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Timeout</td>
+                <td data-label="Date/Time">
+                  <div class="date">30/12/2023</div>
+                  <div class="time">11:53:06</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">24</td>
+                <td data-label="Transaction Id"></td>
+                <td data-label="Payment Id">170384130327251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Aborted</td>
+                <td data-label="Date/Time">
+                  <div class="date">29/12/2023</div>
+                  <div class="time">14:48:36</div>
+                </td>
+                <td data-label="View Receipt"></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">25</td>
+                <td data-label="Transaction Id">T14579</td>
+                <td data-label="Payment Id">170383989227251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">29/12/2023</div>
+                  <div class="time">14:25:21</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">26</td>
+                <td data-label="Transaction Id">T13114</td>
+                <td data-label="Payment Id">170383963827251</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">29/12/2023</div>
+                  <div class="time">14:21:08</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">27</td>
+                <td data-label="Transaction Id">T29111</td>
+                <td data-label="Payment Id">170359321827251</td>
+                <td data-label="Amount">100.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">26/12/2023</div>
+                  <div class="time">17:54:18</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">28</td>
+                <td data-label="Transaction Id">182530</td>
+                <td data-label="Payment Id">169279518027251</td>
+                <td data-label="Amount">3000.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">23/08/2023</div>
+                  <div class="time">18:31:56</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">29</td>
+                <td data-label="Transaction Id">052557</td>
+                <td data-label="Payment Id">166029604727251</td>
+                <td data-label="Amount">500.00</td>
+                <td data-label="Response">Success</td>
+                <td data-label="Date/Time">
+                  <div class="date">12/08/2022</div>
+                  <div class="time">14:54:53</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">30</td>
+                <td data-label="Transaction Id">558202100</td>
+                <td data-label="Payment Id">181341074</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Transaction Failed - Bank Declined Transaction - 0399-failure</td>
+                <td data-label="Date/Time">
+                  <div class="date">18th May 2021</div>
+                  <div class="time">13:38 pm</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">31</td>
+                <td data-label="Transaction Id">558198113</td>
+                <td data-label="Payment Id">181339990</td>
+                <td data-label="Amount">1.00</td>
+                <td data-label="Response">Transaction Failed - Bank Declined Transaction - 0399-failure</td>
+                <td data-label="Date/Time">
+                  <div class="date">18th May 2021</div>
+                  <div class="time">13:22 pm</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+              <tr>
+                <td data-label="SL No">32</td>
+                <td data-label="Transaction Id">526224705</td>
+                <td data-label="Payment Id">171817377</td>
+                <td data-label="Amount">500.00</td>
+                <td data-label="Response">Transaction Successful</td>
+                <td data-label="Date/Time">
+                  <div class="date">27th December</div>
+                  <div class="time">2020 18:50 pm</div>
+                </td>
+                <td data-label="View Receipt"><a href="#" class="btn btn-primary view">Print Receipt</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>Copyright @ 2024 tollygungeclub. All Rights Reserved.</p>
+        <ul>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+          <li><a href="javascript:void(0)">Terms and Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a id="buttonBackTop">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <h4 class="txt">Please Wait...</h4>
+  </div>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/custom.js"></script>
+  
+
+</body>
+
+</html>

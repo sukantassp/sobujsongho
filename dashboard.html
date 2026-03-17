@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body class="dashboard">
+
+  <!-- Header -->
+  <header class="bg-header">
+    <div class="container d-flex justify-content-between align-items-center header-outer">
+      <div class="d-flex justify-content-start align-items-center header-left">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="d-flex align-items-center">
+            <a class="home-icon d-lg-block d-none" href="index-before-login.html">
+              <img src="./images/home-icon.svg" alt="Home" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Heritage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="club-tour.html">Club Tour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Parties, Conferences and Events</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Venue</a>
+                          <div class="submenu_outer">
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">AC Shamiana</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Balmer Lawrie Lounge & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Banquet Hall & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Bridge Room</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Club Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Far Pavilion</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Main Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Pantiles</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Patio 1ST Floor Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Veedol 100 Hall</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Rules</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Available Facilities on Request</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Request</a>
+                        </li>                        
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="sports.html" class="dropdown-item dropdown-toggle">Sports</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Golf</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Table Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Pickleball</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Squash</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Equestrian</a>
+                        </li>                      
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Swimming</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Gym</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Billiard</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Darts</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Bridge</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Food & Beverage</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">18th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">South Verandah</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Belvedere Dining Hall</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">1895 Oudh</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">9th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Cruickshank Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Club House Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Indigo Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Johnnie Walker Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Flurys Cake Shop</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Don Gloavani</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Other Facilities</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Library</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Saloon</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Spa</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Proshop</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Accommodation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="logo">
+        <a href="index-before-login.html">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+      </div>
+      <div class="d-flex justify-content-end align-items-center header-right">
+        <div class="affiliations">
+          <a href="javascript:void(0)">Affiliations</a>
+        </div>
+        <ul class="right-nav">
+          <li>
+            <a href="javascript:void(0)" class="profile-btn dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span><img src="./images/user-icon.svg" alt="" /></span>Jhon Doe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/dashboard-icon.svg" alt=""></span>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/my-profile.svg" alt=""></span>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/change-pass.svg" alt=""></span>
+                  Change Password
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/logout.svg" alt=""></span>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="payment-btn">Quick Payment</a>
+          </li>
+        </ul>
+        <button class="sidemenu-toggler">
+          <!-- <img src="./images/menu-icon.svg" alt="" /> -->
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"/>
+          </svg>
+        </button>
+        <div class="side-menu">
+          <div class="close-outer">
+            <button class="sidemenu-close">
+              <img src="./images/close-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-top">
+              <div class="member-login0outer">
+                <div class="member-profile">
+                  <div class="profile-left">
+                    <div class="profile-image">
+                      <img src="./images/avatars.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="profile-contain">
+                    <!-- <h5>Welcome</h5> -->
+                    <button type="submit" class="btn btn-primary memberLogin">Member’s Login</button>
+                  </div>
+                </div> 
+              </div>
+              <div class="search-outer">
+                <input type="search" class="serch-field" placeholder="Search Options" />
+              </div>
+            </div>
+            <div class="sidebar-bottom">
+              <ul class="item-list">
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/home-2.svg" alt="" /></span> Home
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/courthouse.svg" alt="" /></span> Heritage
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/flag-2.svg" alt="" /></span> Golf
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/ranking.svg" alt="" /></span> Other Sporting Activities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clipboard-tick.svg" alt="" /></span> Other Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/building-3.svg" alt="" /></span> Accommodation
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/house-2.svg" alt="" /></span> Party & Conference
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/shop.svg" alt="" /></span> Proshop
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clock.svg" alt="" /></span> Timing for Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/reserve.svg" alt="" /></span> Food & Beverages
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/radar-2.svg" alt="" /></span> Club Tour
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/gallery.svg" alt="" /></span> Event Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/message-text.svg" alt="" /></span> Affiliation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rightbar-overlay" data-bs-toggle="collapse" data-bs-target="#sideNavbar" aria-expanded="true"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="dashboard-page">
+      <div class="container">
+        <div class="title" data-aos="fade-up">
+          <h3>Dashboard</h3>
+          <p>Hi John, Good Morning !</p>
+        </div>
+        <div class="dashboard-plate">
+          <div class="dashboard-plate-left">
+            <div class="member-profile">
+              <div class="profile-left" data-aos="fade-up">
+                <div class="profile-image">
+                  <img src="./images/profile-image-large.jpg" alt="">
+                </div>
+                <div class="profile-image-edit">
+                  <!-- <img src="./images/camera-large-icon.png" alt=""> -->
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1711 10.127C16.7571 10.127 16.4171 9.79104 16.4171 9.37704C16.4171 8.96304 16.7481 8.62704 17.1621 8.62704H17.1711C17.5851 8.62704 17.9211 8.96304 17.9211 9.37704C17.9211 9.79104 17.5851 10.127 17.1711 10.127ZM12.2501 16.771C10.1021 16.771 8.35509 15.023 8.35509 12.875C8.35509 10.728 10.1021 8.98104 12.2501 8.98104C14.3981 8.98104 16.1451 10.728 16.1451 12.875C16.1451 15.023 14.3981 16.771 12.2501 16.771ZM17.8691 6.00304C17.7001 5.95004 17.4541 5.83904 17.2471 5.61204C17.1611 5.51804 17.0451 5.28304 16.9331 5.05704C16.6311 4.44604 16.2181 3.61004 15.3871 3.26004C14.3191 2.81204 10.2191 2.81004 9.11609 3.25804C8.29609 3.59504 7.87809 4.43504 7.57309 5.04804C7.45809 5.27804 7.34009 5.51604 7.25209 5.61204C7.04609 5.84004 6.80009 5.95004 6.64709 5.99904C3.35009 6.91104 2.74609 9.05404 2.74609 12.944C2.74609 18.568 4.11809 21.077 12.2501 21.077C20.3811 21.077 21.7531 18.568 21.7531 12.944C21.7531 9.05404 21.1501 6.91104 17.8691 6.00304Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2505 10.4805C10.9295 10.4805 9.85547 11.5545 9.85547 12.8755C9.85547 14.1965 10.9295 15.2705 12.2505 15.2705C13.5715 15.2705 14.6455 14.1965 14.6455 12.8755C14.6455 11.5545 13.5715 10.4805 12.2505 10.4805Z" fill="white"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="profile-contain" data-aos="fade-up">
+                <h5>John Doe</h5>
+                <p>Prime Member</p>
+                <ul class="btn-group">
+                  <li>
+                    <a class="btn-link">Logout</a>
+                  </li>
+                  <li>
+                    <a class="btn-link">Change Password</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-plate-right">
+            <h5>Personal Details</h5>
+            <ul class="property-details">
+              <li>
+                <div class="property">Membership ID</div>
+                <div class="value">0123456789</div>
+              </li>
+              <li>
+                <div class="property">Membership Type</div>
+                <div class="value">Club Member</div>
+              </li>
+              <li>
+                <div class="property">Phone Number</div>
+                <div class="value">+91 0123456789</div>
+              </li>
+              <li>
+                <div class="property">Email</div>
+                <div class="value">johndoe123@gmail.com</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dasboard-searchbar">
+          <div class="dashboard-seararea" data-aos="fade-up">
+            <button class="search-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 22L20 20" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <input type="search" name="" placeholder="Search Options" class="search-field" />
+          </div>
+        </div>
+        <div class="featurs-row">
+          <h5 data-aos="fade-up">Favourite</h5>
+          <ul class="features-list">
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/clipboard-text.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 30.5005H37.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 40.5005H30.95" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 15H35C40 15 40 12.5 40 10C40 5 37.5 5 35 5H25C22.5 5 20 5 20 10C20 15 22.5 15 25 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 10.05C48.325 10.5 52.5 13.575 52.5 25V40C52.5 50 50 55 37.5 55H22.5C10 55 7.5 50 7.5 40V25C7.5 13.6 11.675 10.5 20 10.05" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">An Introduction to Tolly</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/clipboard-text.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 30.5005H37.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 40.5005H30.95" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 15H35C40 15 40 12.5 40 10C40 5 37.5 5 35 5H25C22.5 5 20 5 20 10C20 15 22.5 15 25 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 10.05C48.325 10.5 52.5 13.575 52.5 25V40C52.5 50 50 55 37.5 55H22.5C10 55 7.5 50 7.5 40V25C7.5 13.6 11.675 10.5 20 10.05" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">An Introduction to Tolly</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/clipboard-text.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 30.5005H37.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 40.5005H30.95" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 15H35C40 15 40 12.5 40 10C40 5 37.5 5 35 5H25C22.5 5 20 5 20 10C20 15 22.5 15 25 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 10.05C48.325 10.5 52.5 13.575 52.5 25V40C52.5 50 50 55 37.5 55H22.5C10 55 7.5 50 7.5 40V25C7.5 13.6 11.675 10.5 20 10.05" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">An Introduction to Tolly</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/clipboard-text.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 30.5005H37.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 40.5005H30.95" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 15H35C40 15 40 12.5 40 10C40 5 37.5 5 35 5H25C22.5 5 20 5 20 10C20 15 22.5 15 25 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 10.05C48.325 10.5 52.5 13.575 52.5 25V40C52.5 50 50 55 37.5 55H22.5C10 55 7.5 50 7.5 40V25C7.5 13.6 11.675 10.5 20 10.05" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">An Introduction to Tolly</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="featurs-row">
+          <h5 data-aos="fade-up">The Club</h5>
+          <ul class="features-list">
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/clipboard-text.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 30.5005H37.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 40.5005H30.95" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 15H35C40 15 40 12.5 40 10C40 5 37.5 5 35 5H25C22.5 5 20 5 20 10C20 15 22.5 15 25 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 10.05C48.325 10.5 52.5 13.575 52.5 25V40C52.5 50 50 55 37.5 55H22.5C10 55 7.5 50 7.5 40V25C7.5 13.6 11.675 10.5 20 10.05" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">An Introduction to Tolly</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/book.png" alt="" /> -->
+                  <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55.4277 41.85V11.675C55.4277 8.67498 52.9777 6.44998 50.0027 6.69998H49.8527C44.6027 7.14998 36.6277 9.82498 32.1777 12.625L31.7527 12.9C31.0277 13.35 29.8277 13.35 29.1027 12.9L28.4777 12.525C24.0277 9.74998 16.0777 7.09998 10.8277 6.67498C7.85273 6.42498 5.42773 8.67498 5.42773 11.65V41.85C5.42773 44.25 7.37773 46.5 9.77773 46.8L10.5027 46.9C15.9277 47.625 24.3027 50.375 29.1027 53L29.2027 53.05C29.8777 53.425 30.9527 53.425 31.6027 53.05C36.4027 50.4 44.8027 47.625 50.2527 46.9L51.0777 46.8C53.4777 46.5 55.4277 44.25 55.4277 41.85Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30.4277 13.725V51.225" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.8027 21.225H14.1777" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.6777 28.725H14.1777" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">The Brand Book</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/directbox-notif.png" alt="" /> -->
+                  <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.2148 30C8.21484 30 8.21484 34.475 8.21484 40V42.5C8.21484 49.4 8.21484 55 20.7148 55H40.7148C50.7148 55 53.2148 49.4 53.2148 42.5V40C53.2148 34.475 53.2148 30 43.2148 30C40.7148 30 40.0148 30.525 38.7148 31.5L36.1648 34.2C33.2148 37.35 28.2148 37.35 25.2398 34.2L22.7148 31.5C21.4148 30.525 20.7148 30 18.2148 30Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M48.2148 30V15C48.2148 9.475 48.2148 5 38.2148 5H23.2148C13.2148 5 13.2148 9.475 13.2148 15V30" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M27.0898 23.075H35.4148" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25.0156 15.575H37.5156" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Letter from the President</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/people.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M44.9992 17.9C44.8492 17.875 44.6742 17.875 44.5242 17.9C41.0742 17.775 38.3242 14.95 38.3242 11.45C38.3242 7.875 41.1992 5 44.7742 5C48.3492 5 51.2242 7.9 51.2242 11.45C51.1992 14.95 48.4492 17.775 44.9992 17.9Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M42.4246 36.1C45.8496 36.675 49.6246 36.075 52.2746 34.3C55.7996 31.95 55.7996 28.1 52.2746 25.75C49.5996 23.975 45.7746 23.375 42.3496 23.975" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.9242 17.9C15.0742 17.875 15.2492 17.875 15.3992 17.9C18.8492 17.775 21.5992 14.95 21.5992 11.45C21.5992 7.875 18.7242 5 15.1492 5C11.5742 5 8.69922 7.9 8.69922 11.45C8.72422 14.95 11.4742 17.775 14.9242 17.9Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.4996 36.1C14.0746 36.675 10.2996 36.075 7.64961 34.3C4.12461 31.95 4.12461 28.1 7.64961 25.75C10.3246 23.975 14.1496 23.375 17.5746 23.975" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30.0012 36.5751C29.8512 36.5501 29.6762 36.5501 29.5262 36.5751C26.0762 36.4501 23.3262 33.6251 23.3262 30.1251C23.3262 26.5501 26.2012 23.675 29.7762 23.675C33.3512 23.675 36.2262 26.5751 36.2262 30.1251C36.2012 33.6251 33.4512 36.4751 30.0012 36.5751Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.7258 44.45C19.2008 46.8 19.2008 50.65 22.7258 53C26.7258 55.675 33.2758 55.675 37.2758 53C40.8008 50.65 40.8008 46.8 37.2758 44.45C33.3008 41.8 26.7258 41.8 22.7258 44.45Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Committees</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/receipt-text.png" alt="" /> -->
+                  <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55.2852 15V21.05C55.2852 25 52.7851 27.5 48.8351 27.5H40.2852V10.025C40.2852 7.25 42.5602 5 45.3352 5C48.0602 5.025 50.5602 6.125 52.3602 7.925C54.1602 9.75 55.2852 12.25 55.2852 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.28516 17.5V52.5C5.28516 54.575 7.6351 55.75 9.2851 54.5L13.5602 51.3C14.5602 50.55 15.9602 50.65 16.8602 51.55L21.0101 55.725C21.9851 56.7 23.5852 56.7 24.5602 55.725L28.7602 51.525C29.6352 50.65 31.0352 50.55 32.0102 51.3L36.2852 54.5C37.9352 55.725 40.2852 54.55 40.2852 52.5V10C40.2852 7.25 42.5352 5 45.2852 5H17.7852H15.2852C7.78516 5 5.28516 9.475 5.28516 15V17.5Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.2852 22.5H30.2852" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.1602 32.5H28.4102" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Tolly Tatler</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/personalcard.png" alt="" /> -->
+                  <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43.0703 52.5H18.0703C8.07031 52.5 5.57031 50 5.57031 40V20C5.57031 10 8.07031 7.5 18.0703 7.5H43.0703C53.0703 7.5 55.5703 10 55.5703 20V40C55.5703 50 53.0703 52.5 43.0703 52.5Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M35.5703 20H48.0703" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M38.0703 30H48.0703" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M43.0703 40H48.0703" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.8199 28.225C24.319 28.225 26.3449 26.1991 26.3449 23.7C26.3449 21.201 24.319 19.175 21.8199 19.175C19.3208 19.175 17.2949 21.201 17.2949 23.7C17.2949 26.1991 19.3208 28.225 21.8199 28.225Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30.5703 40.825C30.2203 37.2 27.3453 34.35 23.7203 34.025C22.4703 33.9 21.1953 33.9 19.9203 34.025C16.2953 34.375 13.4203 37.2 13.0703 40.825" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Members Directory</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/receive-square.png" alt="" /> -->
+                  <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.3574 55H38.3574C50.8574 55 55.8574 50 55.8574 37.5V22.5C55.8574 10 50.8574 5 38.3574 5H23.3574C10.8574 5 5.85742 10 5.85742 22.5V37.5C5.85742 50 10.8574 55 23.3574 55Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M23.3574 28.775L30.8574 36.275L38.3574 28.775" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30.8574 36.275V16.275" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.8574 41.275C25.5824 44.525 36.1324 44.525 45.8574 41.275" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Downloads</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/mouse-square.png" alt="" /> -->
+                   <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55 30V22.5C55 10 50 5 37.5 5H22.5C10 5 5 10 5 22.5V37.5C5 50 10 55 22.5 55H30" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M52.4002 44.6L48.3252 45.975C47.2002 46.35 46.3002 47.225 45.9252 48.375L44.5502 52.45C43.3752 55.975 38.4252 55.9 37.3252 52.375L32.7002 37.5C31.8002 34.55 34.5252 31.8 37.4502 32.725L52.3502 37.35C55.8502 38.45 55.9002 43.425 52.4002 44.6Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Touch Points</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="featurs-row">
+          <h5 data-aos="fade-up">Invoices & Payments</h5>
+          <ul class="features-list">
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/wallet-check.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 47.5C22.5 49.375 21.975 51.15 21.05 52.65C19.325 55.55 16.15 57.5 12.5 57.5C8.85 57.5 5.675 55.55 3.95 52.65C3.025 51.15 2.5 49.375 2.5 47.5C2.5 41.975 6.975 37.5 12.5 37.5C18.025 37.5 22.5 41.975 22.5 47.5Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.60352 47.4988L11.0785 49.9738L16.4035 45.0488" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M44.3785 17.6249C43.7785 17.5249 43.1535 17.5 42.5035 17.5H17.5035C16.8035 17.5 16.1285 17.5499 15.4785 17.6499C15.8285 16.9499 16.3285 16.3 16.9285 15.7L25.0535 7.55C28.4785 4.15 34.0285 4.15 37.4535 7.55L41.8285 11.9749C43.4285 13.5499 44.2785 15.5499 44.3785 17.6249Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M55 30V42.5C55 50 50 55 42.5 55H19.075C19.85 54.35 20.525 53.55 21.05 52.65C21.975 51.15 22.5 49.375 22.5 47.5C22.5 41.975 18.025 37.5 12.5 37.5C9.5 37.5 6.825 38.825 5 40.9V30C5 23.2 9.1 18.45 15.475 17.65C16.125 17.55 16.8 17.5 17.5 17.5H42.5C43.15 17.5 43.775 17.525 44.375 17.625C50.825 18.375 55 23.15 55 30Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M55 31.25H47.5C44.75 31.25 42.5 33.5 42.5 36.25C42.5 39 44.75 41.25 47.5 41.25H55" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Make Payment</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/cup.png" alt="" /> -->
+                  <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45.1 34.1367C44.05 35.1617 43.45 36.6367 43.6 38.2117C43.825 40.9117 46.3 42.8867 49 42.8867H53.75V45.8617C53.75 51.0367 49.525 55.2617 44.35 55.2617H19.1C21.175 53.4367 22.5 50.7617 22.5 47.7617C22.5 42.2367 18.025 37.7617 12.5 37.7617C10.15 37.7617 7.975 38.5867 6.25 39.9617V29.0367C6.25 23.8617 10.475 19.6367 15.65 19.6367H44.35C49.525 19.6367 53.75 23.8617 53.75 29.0367V32.6367H48.7C47.3 32.6367 46.025 33.1867 45.1 34.1367Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.25 29.0368V19.8618C6.25 16.8868 8.07499 14.2367 10.85 13.1867L30.7 5.68671C33.8 4.53671 37.125 6.81178 37.125 10.1368V19.6368" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M56.397 35.1871V40.3372C56.397 41.7122 55.297 42.8371 53.897 42.8871H48.997C46.297 42.8871 43.822 40.9122 43.597 38.2122C43.447 36.6372 44.047 35.1621 45.097 34.1371C46.022 33.1871 47.297 32.6372 48.697 32.6372H53.897C55.297 32.6872 56.397 33.8121 56.397 35.1871Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 30.2617H35" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.5 47.7617C22.5 50.7617 21.175 53.4367 19.1 55.2617C17.325 56.8117 15.025 57.7617 12.5 57.7617C6.975 57.7617 2.5 53.2867 2.5 47.7617C2.5 44.6117 3.95 41.7867 6.25 39.9617C7.975 38.5867 10.15 37.7617 12.5 37.7617C18.025 37.7617 22.5 42.2367 22.5 47.7617Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.125 44.6367V48.3867L10 50.2617" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Payment History</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/receipt-2.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.825 49.25C18.875 47.05 22 47.225 23.8 49.625L26.325 53C28.35 55.675 31.625 55.675 33.65 53L36.175 49.625C37.975 47.225 41.1 47.05 43.15 49.25C47.6 54 51.225 52.425 51.225 45.775V17.6C51.25 7.525 48.9 5 39.45 5H20.55C11.1 5 8.75 7.525 8.75 17.6V45.75C8.75 52.425 12.4 53.975 16.825 49.25Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.2402 27.5H20.2626" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M27.2461 27.5H40.9961" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.2402 17.5H20.2626" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M27.2461 17.5H40.9961" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Monthly Invoice</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/document.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5 55H37.5C50 55 55 50 55 37.5V22.5C55 10 50 5 37.5 5H22.5C10 5 5 10 5 22.5V37.5C5 50 10 55 22.5 55Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M39.375 22.5H20.625" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M39.375 37.5H20.625" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Account Statement</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="featurs-row">
+          <h5 data-aos="fade-up">Online Services</h5>
+          <ul class="features-list">
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.375 41.25V46.5" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.875 55H42.875V52.5C42.875 49.75 40.625 47.5 37.875 47.5H22.875C20.125 47.5 17.875 49.75 17.875 52.5V55V55Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M15.375 55H45.375" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30 40C20.325 40 12.5 32.175 12.5 22.5V15C12.5 9.475 16.975 5 22.5 5H37.5C43.025 5 47.5 9.475 47.5 15V22.5C47.5 32.175 39.675 40 30 40Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.6746 29.125C11.7996 28.525 10.1496 27.425 8.84961 26.125C6.59961 23.625 5.09961 20.625 5.09961 17.125C5.09961 13.625 7.84961 10.875 11.3496 10.875H12.9746C12.4746 12.025 12.2246 13.3 12.2246 14.625V22.125C12.2246 24.625 12.7496 26.975 13.6746 29.125Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M46.3242 29.125C48.1992 28.525 49.8492 27.425 51.1492 26.125C53.3992 23.625 54.8992 20.625 54.8992 17.125C54.8992 13.625 52.1492 10.875 48.6492 10.875H47.0242C47.5242 12.025 47.7742 13.3 47.7742 14.625V22.125C47.7742 24.625 47.2492 26.975 46.3242 29.125Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Sports Booking</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 55H55" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.375 55L7.5 24.925C7.5 23.4 8.225 21.9501 9.425 21.0001L26.925 7.37507C28.725 5.97507 31.25 5.97507 33.075 7.37507L50.575 20.9751C51.8 21.9251 52.5 23.375 52.5 24.925V55" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    <path d="M32.5 42.5H27.5C25.425 42.5 23.75 44.175 23.75 46.25V55H36.25V46.25C36.25 44.175 34.575 42.5 32.5 42.5Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    <path d="M23.75 34.375H18.75C17.375 34.375 16.25 33.25 16.25 31.875V28.125C16.25 26.75 17.375 25.625 18.75 25.625H23.75C25.125 25.625 26.25 26.75 26.25 28.125V31.875C26.25 33.25 25.125 34.375 23.75 34.375Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    <path d="M41.25 34.375H36.25C34.875 34.375 33.75 33.25 33.75 31.875V28.125C33.75 26.75 34.875 25.625 36.25 25.625H41.25C42.625 25.625 43.75 26.75 43.75 28.125V31.875C43.75 33.25 42.625 34.375 41.25 34.375Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+                    <path d="M47.5008 17.5L47.4258 10H36.4258" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Rooms Booking</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M47.4258 55H12.4258C4.92578 55 4.92578 51.625 4.92578 47.5V45C4.92578 43.625 6.05078 42.5 7.42578 42.5H52.4258C53.8008 42.5 54.9258 43.625 54.9258 45V47.5C54.9258 51.625 54.9258 55 47.4258 55Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M51.8008 32.5V42.5H8.17578V32.5C8.17578 22.9 14.9508 14.875 23.9758 12.95C25.3258 12.65 26.7258 12.5 28.1758 12.5H31.8008C33.2508 12.5 34.6758 12.65 36.0258 12.95C45.0508 14.9 51.8008 22.9 51.8008 32.5Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M36.25 11.25C36.25 11.85 36.175 12.4 36.025 12.95C34.675 12.65 33.25 12.5 31.8 12.5H28.175C26.725 12.5 25.325 12.65 23.975 12.95C23.825 12.4 23.75 11.85 23.75 11.25C23.75 7.8 26.55 5 30 5C33.45 5 36.25 7.8 36.25 11.25Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M37.5 27.5H22.5" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Table Booking</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.75 45V17.5C8.75 7.5 11.25 5 21.25 5H38.75C48.75 5 51.25 7.5 51.25 17.5V42.5C51.25 42.85 51.25 43.2 51.225 43.55" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.875 37.5H51.25V46.25C51.25 51.075 47.325 55 42.5 55H17.5C12.675 55 8.75 51.075 8.75 46.25V44.625C8.75 40.7 11.95 37.5 15.875 37.5Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 17.5H40" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 26.25H32.5" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Library</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.9258 22.2H44.0508" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.9492 22.2L17.8242 24.075L23.4492 18.45" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30.9258 39.7H44.0508" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.9492 39.7L17.8242 41.5749L23.4492 35.95" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.5 55H37.5C50 55 55 50 55 37.5V22.5C55 10 50 5 37.5 5H22.5C10 5 5 10 5 22.5V37.5C5 50 10 55 22.5 55Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Reciprocal <br />Introduction</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="featurs-row">
+          <h5 data-aos="fade-up">Member Feedback</h5>
+          <ul class="features-list">
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.0002 19.7251L27.3252 24.3751C26.7252 25.4001 27.2252 26.2501 28.4002 26.2501H31.5752C32.7752 26.2501 33.2502 27.1001 32.6502 28.1251L30.0002 32.7751" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.7504 45.1V42.1999C15.0004 38.7249 10.2754 31.9499 10.2754 24.7499C10.2754 12.3749 21.6504 2.67495 34.5004 5.47495C40.1504 6.72495 45.1004 10.475 47.6754 15.65C52.9004 26.15 47.4004 37.3 39.3254 42.175V45.075C39.3254 45.8 39.6004 47.4749 36.9254 47.4749H23.1504C20.4004 47.4999 20.7504 46.425 20.7504 45.1Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.25 55C26.975 53.375 33.025 53.375 38.75 55" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Suggestion</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.3243 8.7751L38.7243 17.5751C39.3243 18.8001 40.9243 19.9751 42.2743 20.2001L50.2493 21.5251C55.3493 22.3751 56.5493 26.0751 52.8743 29.7251L46.6743 35.9251C45.6243 36.9751 45.0493 39.0001 45.3743 40.4501L47.1493 48.1251C48.5493 54.2001 45.3243 56.5501 39.9493 53.3751L32.4743 48.9501C31.1243 48.1501 28.8993 48.1501 27.5243 48.9501L20.0493 53.3751C14.6993 56.5501 11.4493 54.1751 12.8493 48.1251L14.6243 40.4501C14.9493 39.0001 14.3743 36.9751 13.3243 35.9251L7.12428 29.7251C3.47428 26.0751 4.64928 22.3751 9.74928 21.5251L17.7243 20.2001C19.0493 19.9751 20.6493 18.8001 21.2493 17.5751L25.6493 8.7751C28.0493 4.0001 31.9493 4.0001 34.3243 8.7751Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Rating</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 55H52.5" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.9999 20.95H10C8.625 20.95 7.5 22.075 7.5 23.45V44.9999C7.5 46.3749 8.625 47.4999 10 47.4999H13.9999C15.3749 47.4999 16.4999 46.3749 16.4999 44.9999V23.45C16.4999 22.075 15.3749 20.95 13.9999 20.95Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.9999 12.9751H28C26.625 12.9751 25.5 14.1001 25.5 15.4751V45.0001C25.5 46.3751 26.625 47.5001 28 47.5001H31.9999C33.3749 47.5001 34.4999 46.3751 34.4999 45.0001V15.4751C34.4999 14.1001 33.3749 12.9751 31.9999 12.9751Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M49.9999 5H46C44.625 5 43.5 6.125 43.5 7.5V45C43.5 46.375 44.625 47.5 46 47.5H49.9999C51.3749 47.5 52.4999 46.375 52.4999 45V7.5C52.4999 6.125 51.3749 5 49.9999 5Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Polling</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 10V25H20" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.275 37.4999C12.896 42.1008 15.9683 46.0503 20.0291 48.7533C24.0899 51.4563 28.9192 52.7663 33.7893 52.486C38.6594 52.2058 43.3064 50.3503 47.0303 47.1993C50.7542 44.0482 53.3531 39.7723 54.4356 35.0158C55.518 30.2592 55.0252 25.2798 53.0316 20.8276C51.0379 16.3755 47.6513 12.6919 43.3821 10.3318C39.1129 7.97171 34.1923 7.06303 29.3617 7.74266C24.5311 8.4223 20.0523 10.6534 16.6 14.0999L5 24.9999" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">History</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="featurs-row">
+          <h5 data-aos="fade-up">Event & Notices</h5>
+          <ul class="features-list">
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/calendar.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5V12.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 5V12.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.75 22.7251H51.25" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M52.5 21.25V42.5C52.5 50 48.75 55 40 55H20C11.25 55 7.5 50 7.5 42.5V21.25C7.5 13.75 11.25 8.75 20 8.75H40C48.75 8.75 52.5 13.75 52.5 21.25Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M39.2363 34.25H39.2587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M39.2363 41.75H39.2587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M29.9882 34.25H30.0107" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M29.9882 41.75H30.0107" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.7363 34.25H20.7587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.7363 41.75H20.7587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Event Calendar</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/calendar-tick.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5V12.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 5V12.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.75 22.7251H51.25" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M45 57.5C50.5228 57.5 55 53.0228 55 47.5C55 41.9772 50.5228 37.5 45 37.5C39.4772 37.5 35 41.9772 35 47.5C35 53.0228 39.4772 57.5 45 57.5Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M45.625 44.375V46.7C45.625 47.575 45.175 48.4 44.4 48.85L42.5 50" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M52.5 21.25V40.9C50.675 38.825 48 37.5 45 37.5C39.475 37.5 35 41.975 35 47.5C35 49.375 35.525 51.15 36.45 52.65C36.975 53.55 37.65 54.35 38.425 55H20C11.25 55 7.5 50 7.5 42.5V21.25C7.5 13.75 11.25 8.75 20 8.75H40C48.75 8.75 52.5 13.75 52.5 21.25Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M29.9882 34.25H30.0107" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.7363 34.25H20.7587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.7363 41.75H20.7587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Upcoming Events</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/calendar-edit.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 5V12.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 5V12.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.75 22.7251H51.25" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M52.5 45H37.5L42.5 40" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M37.5 45L42.5 50" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M32.5 55H20C11.25 55 7.5 50 7.5 42.5V21.25C7.5 13.75 11.25 8.75 20 8.75H40C48.75 8.75 52.5 13.75 52.5 21.25V32.5" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M29.9882 34.25H30.0107" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.7363 34.25H20.7587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20.7363 41.75H20.7587" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Previous Events</div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/menu-board.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M54.8248 16.9L46.3999 50.7251C45.7999 53.2501 43.5499 55 40.9499 55H8.09984C4.32484 55 1.62488 51.2999 2.74988 47.6749L13.2749 13.8751C13.9999 11.5251 16.1749 9.8999 18.6249 9.8999H49.3749C51.7499 9.8999 53.7249 11.3499 54.5499 13.3499C55.0249 14.4249 55.1248 15.65 54.8248 16.9Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M40 55H51.95C55.175 55 57.7 52.275 57.475 49.05L55 15" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24.1992 15.95L26.7992 5.15015" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40.9492 15.9749L43.2992 5.125" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.25 30H39.25" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.75 40H36.75" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <div class="wishlist">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.62 20.81C12.28 20.93 11.72 20.93 11.38 20.81C8.48 19.82 2 15.69 2 8.68998C2 5.59998 4.49 3.09998 7.56 3.09998C9.38 3.09998 10.99 3.97998 12 5.33998C13.01 3.97998 14.63 3.09998 16.44 3.09998C19.51 3.09998 22 5.59998 22 8.68998C22 15.69 15.52 19.82 12.62 20.81Z" fill="#FCC201"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="feature-name">Notices/Circulars</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="featurs-row">
+          <h5 data-aos="fade-up">Favourite</h5>
+          <ul class="features-list features-row-list">
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/clipboard-text2.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 15H35C40 15 40 12.5 40 10C40 5 37.5 5 35 5H25C22.5 5 20 5 20 10C20 15 22.5 15 25 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 10.05C48.325 10.5 52.5 13.575 52.5 25V40C52.5 50 50 55 37.5 55H22.5C10 55 7.5 50 7.5 40V25C7.5 13.6 11.675 10.5 20 10.05" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 45C39.6 41.0562 36.3143 37.9556 32.1714 37.602C30.7429 37.466 29.2857 37.466 27.8286 37.602C23.6857 37.9828 20.4 41.0562 20 45" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30 32.5C32.7614 32.5 35 30.2614 35 27.5C35 24.7386 32.7614 22.5 30 22.5C27.2386 22.5 25 24.7386 25 27.5C25 30.2614 27.2386 32.5 30 32.5Z" stroke="#004E24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="feature-name">Membership Application</div>
+              </div>
+              <div class="member-btn-outer">
+                <button class="btn btn-primary">Download</button>
+              </div>              
+            </li>
+            <li data-aos="fade-up">
+              <div class="feature-inner">
+                <div class="feature-icon">
+                  <!-- <img src="./images/clipboard-text3.png" alt="" /> -->
+                  <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 15H35C40 15 40 12.5 40 10C40 5 37.5 5 35 5H25C22.5 5 20 5 20 10C20 15 22.5 15 25 15Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M40 10.05C48.325 10.5 52.5 13.575 52.5 25V40C52.5 50 50 55 37.5 55H22.5C10 55 7.5 50 7.5 40V25C7.5 13.6 11.675 10.5 20 10.05" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M32.5978 28.9325L23.7479 37.7825C23.3979 38.1325 23.0728 38.7825 22.9978 39.2575L22.5228 42.6326C22.3478 43.8576 23.1979 44.7076 24.4229 44.5326L27.7979 44.0576C28.2729 43.9826 28.9479 43.6575 29.2729 43.3075L38.1229 34.4576C39.6479 32.9326 40.3729 31.1576 38.1229 28.9076C35.8979 26.6826 34.1228 27.4075 32.5978 28.9325Z" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M31.3223 30.2075C32.0723 32.9075 34.1723 35.0075 36.8723 35.7575" stroke="#004E24" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="feature-name">Apply for membership card</div>
+              </div>
+              <div class="member-btn-outer">
+                <button class="btn btn-primary">Apply</button>
+              </div>  
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>Copyright @ 2024 tollygungeclub. All Rights Reserved.</p>
+        <ul>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+          <li><a href="javascript:void(0)">Terms and Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a id="buttonBackTop">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <h4 class="txt">Please Wait...</h4>
+  </div>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Affiliated Clubs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body class="affiliated">
+
+  <!-- Header -->
+  <header class="bg-header">
+    <div class="container d-flex justify-content-between align-items-center header-outer">
+      <div class="d-flex justify-content-start align-items-center header-left">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="d-flex align-items-center">
+            <a class="home-icon d-lg-block d-none" href="index-before-login.html">
+              <img src="./images/home-icon.svg" alt="Home" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Heritage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="club-tour.html">Club Tour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Parties, Conferences and Events</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Venue</a>
+                          <div class="submenu_outer">
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">AC Shamiana</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Balmer Lawrie Lounge & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Banquet Hall & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Bridge Room</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Club Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Far Pavilion</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Main Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Pantiles</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Patio 1ST Floor Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Veedol 100 Hall</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Rules</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Available Facilities on Request</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Request</a>
+                        </li>                        
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="sports.html" class="dropdown-item dropdown-toggle">Sports</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Golf</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Table Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Pickleball</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Squash</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Equestrian</a>
+                        </li>                      
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Swimming</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Gym</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Billiard</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Darts</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Bridge</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Food & Beverage</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">18th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">South Verandah</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Belvedere Dining Hall</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">1895 Oudh</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">9th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Cruickshank Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Club House Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Indigo Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Johnnie Walker Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Flurys Cake Shop</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Don Gloavani</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Other Facilities</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Library</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Saloon</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Spa</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Proshop</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Accommodation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="logo">
+        <a href="index-before-login.html">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+      </div>
+      <div class="d-flex justify-content-end align-items-center header-right">
+        <div class="affiliations">
+          <a href="javascript:void(0)">Affiliations</a>
+        </div>
+        <ul class="right-nav">
+          <li>
+            <a href="javascript:void(0)" class="profile-btn dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span><img src="./images/user-icon.svg" alt="" /></span>Jhon Doe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/dashboard-icon.svg" alt=""></span>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/my-profile.svg" alt=""></span>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/change-pass.svg" alt=""></span>
+                  Change Password
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/logout.svg" alt=""></span>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="payment-btn">Quick Payment</a>
+          </li>
+        </ul>
+        <button class="sidemenu-toggler">
+          <!-- <img src="./images/menu-icon.svg" alt="" /> -->
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"/>
+          </svg>
+        </button>
+        <div class="side-menu">
+          <div class="close-outer">
+            <button class="sidemenu-close">
+              <img src="./images/close-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-top">
+              <div class="member-login0outer">
+                <div class="member-profile">
+                  <div class="profile-left">
+                    <div class="profile-image">
+                      <img src="./images/avatars.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="profile-contain">
+                    <!-- <h5>Welcome</h5> -->
+                    <button type="submit" class="btn btn-primary memberLogin">Member’s Login</button>
+                  </div>
+                </div> 
+              </div>
+              <div class="search-outer">
+                <input type="search" class="serch-field" placeholder="Search Options" />
+              </div>
+            </div>
+            <div class="sidebar-bottom">
+              <ul class="item-list">
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/home-2.svg" alt="" /></span> Home
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/courthouse.svg" alt="" /></span> Heritage
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/flag-2.svg" alt="" /></span> Golf
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/ranking.svg" alt="" /></span> Other Sporting Activities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clipboard-tick.svg" alt="" /></span> Other Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/building-3.svg" alt="" /></span> Accommodation
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/house-2.svg" alt="" /></span> Party & Conference
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/shop.svg" alt="" /></span> Proshop
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clock.svg" alt="" /></span> Timing for Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/reserve.svg" alt="" /></span> Food & Beverages
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/radar-2.svg" alt="" /></span> Club Tour
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/gallery.svg" alt="" /></span> Event Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/message-text.svg" alt="" /></span> Affiliation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rightbar-overlay" data-bs-toggle="collapse" data-bs-target="#sideNavbar" aria-expanded="true"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="banner-slider">
+      <div class="slider-item"><img src="./images/subBanner/affiliated-clubs-img3.jpg" alt="Slide 1"></div>
+      <div class="slider-item"><img src="./images/subBanner/affiliated-clubs-img2.jpg" alt="Slide 2"></div>
+      <div class="slider-item"><img src="./images/subBanner/affiliated-clubs-img1.jpg" alt="Slide 3"></div>
+      <!-- <div class="slider-item">
+        <video class="slide-video slide-media" loop muted preload="metadata" poster="">
+          <source src="./video/1.mp4" type="video/mp4" />
+        </video>
+      </div> -->
+    </section>
+
+    <div class="banner-inner-content">
+      <div class="container">
+        <ul class="bread-come">
+          <li>
+            <a href="javascript:void(0)">Home</a>
+          </li>
+          <li>Affiliated Clubs</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="affiliated-clubs">
+      <div class="container">
+        <div class="page-title">
+          <h1>Our Clubs</h1>
+        </div>
+        <ul class="club-tour-list">
+          <li>
+            <div class="tour-content" data-aos="fade-up">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing.</p>
+            </div>
+            <div class="tour-image" data-aos="fade-up">
+              <img src="./images/heritage1.jpg" alt="" />
+            </div>
+          </li>
+          <li>
+            <div class="tour-content" data-aos="fade-up">
+              <h4>Lorem Ipsum</h4>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>              
+            </div>
+            <div class="tour-image" data-aos="fade-up">
+              <img src="./images/heritage2.jpg" alt="" />
+            </div>
+          </li>
+        </ul>        
+      </div>
+    </section>
+    <section class="affiliated-clubs-tab">
+      <div class="container">
+        <div class="club-information-tab">
+          <h2>Affiliated Clubs</h2>
+          <div class="tabs_with_accordion_wrapper">
+            <div class="container">
+              <!-- Nav Tabs List -->
+              <ul class="nav nav-tabs d-none d-md-flex" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="overseas-tab" data-bs-toggle="tab" data-bs-target="#overseas" type="button" role="tab" aria-controls="overseas" aria-selected="true">Overseas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="india-tab" data-bs-toggle="tab" data-bs-target="#india" type="button" role="tab" aria-controls="india" aria-selected="false">India</button>
+                </li>
+              </ul>
+
+              <!-- Nav Tabs Content -->
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane accordion-item fade show active" id="overseas" role="tabpanel" aria-labelledby="overseas-tab">
+                  <h2 class="accordion-header d-md-none" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Overseas</button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                      <!-- sub state here start -->
+                      <div class="tab-inner" id="myTabSubContent">
+                        <div class="tab-pane accordion-item fade show" id="item1" role="tabpanel" aria-labelledby="item1-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item1Content" aria-expanded="true" aria-controls="item1Content">tab 1</button>
+                          <div id="item1Content" class="accordion-collapse collapse show" aria-labelledby="item1" data-bs-parent="#myTabSubContent">
+                            <div class="data-row">
+                              <div class="data-box">
+                                <table class="data-table">
+                                  <thead>
+                                    <th colspan="3">Ahmedabad Gymkhana</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Address</td>
+                                      <td>:</td>
+                                      <td>Near Camp Hanuman Mandir Cantt Ahmedabad-380003</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Phone</td>
+                                      <td>:</td>
+                                      <td>(79) 2286 7161</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Fax</td>
+                                      <td>:</td>
+                                      <td>2285 0133</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Email</td>
+                                      <td>:</td>
+                                      <td><a href="mailto:info@ahmedabadgymkhana.com">info@ahmedabadgymkhana.com</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Website</td>
+                                      <td>:</td>
+                                      <td><a href="www.ahmedabadgymkhana.com" target="_blank">www.ahmedabadgymkhana.com</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Accommodation</td>
+                                      <td>:</td>
+                                      <td>No</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="data-box">
+                                <table class="data-table">
+                                  <thead>
+                                    <th colspan="3">Bangalore Club</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Address</td>
+                                      <td>:</td>
+                                      <td>10, Field Marshal KM Cariappa Rd Bangalore-560 025</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Phone</td>
+                                      <td>:</td>
+                                      <td>(80) 6606 0000/2227 1317/2518</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Fax</td>
+                                      <td>:</td>
+                                      <td>2227 3605/3223</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Email</td>
+                                      <td>:</td>
+                                      <td>
+                                        <a href="mailto:secretary@bangaloreclub.com">secretary@bangaloreclub.com</a>, 
+                                        <a href="mailto:chamber@bangaloreclub.com">chamber@bangaloreclub.com</a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>Website</td>
+                                      <td>:</td>
+                                      <td><a href="www.bangaloreclub.com" target="_blank">www.bangaloreclub.com</a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Accommodation</td>
+                                      <td>:</td>
+                                      <td>Yes</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="item2" role="tabpanel" aria-labelledby="item2-tab">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2Content" aria-expanded="false" aria-controls="item2Content">tab 2</button>
+                          <div id="item2Content" class="accordion-collapse collapse" aria-labelledby="item2" data-bs-parent="#myTabSubContent">content 2</div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="item3" role="tabpanel" aria-labelledby="item3-tab">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item3Content" aria-expanded="false" aria-controls="item3Content">tab 3</button>
+                          <div id="item3Content" class="accordion-collapse collapse" aria-labelledby="item3" data-bs-parent="#myTabSubContent">content 3</div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="item4" role="tabpanel" aria-labelledby="item4-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item4Content" aria-expanded="false" aria-controls="item4Content">tab 4</button>
+                          <div id="item4Content" class="accordion-collapse collapse" aria-labelledby="item4" data-bs-parent="#myTabSubContent">content 4</div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="item5" role="tabpanel" aria-labelledby="item5-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item5Content" aria-expanded="false" aria-controls="item4Content">tab 5</button>
+                          <div id="item5Content" class="accordion-collapse collapse" aria-labelledby="item5" data-bs-parent="#myTabSubContent">content 5</div>
+                        </div>
+                      </div>
+                      <!-- sub state here end -->
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane accordion-item fade" id="india" role="tabpanel" aria-labelledby="india-tab">
+                  <h2 class="accordion-header d-md-none" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">India</button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse d-md-block" aria-labelledby="headingTwo" data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                      <!-- sub state here start -->
+                      <div class="tab-inner" id="myTabSubContent2">
+                        <div class="tab-pane accordion-item fade show" id="indiaItem1" role="tabpanel" aria-labelledby="india-item1-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#indiaItem1Content" aria-expanded="true" aria-controls="item1Content">india tab 1</button>
+                          <div id="indiaItem1Content" class="accordion-collapse collapse show" aria-labelledby="indiaItem1" data-bs-parent="#myTabSubContent2">
+
+                            <div class="data-row">
+                              <div class="data-box">
+                                <table class="data-table">
+                                  <thead>
+                                    <th colspan="3">Heading 1</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Address</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Phone</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Fax</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Email</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Website</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Accommodation</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="data-box">
+                                <table class="data-table">
+                                  <thead>
+                                    <th colspan="3">Heading 2</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Address</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Phone</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Fax</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Email</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Website</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Accommodation</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="data-row">
+                              <div class="data-box">
+                                <table class="data-table">
+                                  <thead>
+                                    <th colspan="3">Heading 1</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Address</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Phone</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Fax</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Email</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Website</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Accommodation</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="data-box">
+                                <table class="data-table">
+                                  <thead>
+                                    <th colspan="3">Heading 2</th>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>Address</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Phone</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Fax</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Email</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Website</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Accommodation</td>
+                                      <td>:</td>
+                                      <td></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="indiaItem2" role="tabpanel" aria-labelledby="india-item2-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#indiaItem2Content" aria-expanded="false" aria-controls="indiaItem2Content">india tab 2</button>
+                          <div id="indiaItem2Content" class="accordion-collapse collapse" aria-labelledby="indiaItem2" data-bs-parent="#myTabSubContent2">india content 2</div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="indiaItem3" role="tabpanel" aria-labelledby="india-item3-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#indiaItem3Content" aria-expanded="false" aria-controls="indiaItem3Content">india tab 3</button>
+                          <div id="indiaItem3Content" class="accordion-collapse collapse" aria-labelledby="indiaItem3" data-bs-parent="#myTabSubContent2">india content 3</div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="indiaItem4" role="tabpanel" aria-labelledby="india-item4-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#indiaItem4Content" aria-expanded="false" aria-controls="indiaItem4Content">india tab 4</button>
+                          <div id="indiaItem4Content" class="accordion-collapse collapse" aria-labelledby="indiaItem4" data-bs-parent="#myTabSubContent2">india content 4</div>
+                        </div>
+                        <div class="tab-pane accordion-item fade show" id="indiaItem5" role="tabpanel" aria-labelledby="india-item5-tab">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#indiaItem5Content" aria-expanded="false" aria-controls="indiaItem4Content">india tab 5</button>
+                          <div id="indiaItem5Content" class="accordion-collapse collapse" aria-labelledby="indiaItem5" data-bs-parent="#myTabSubContent2">india content 5</div>
+                        </div>
+                      </div>
+                      <!-- sub state here end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>Copyright @ 2024 tollygungeclub. All Rights Reserved.</p>
+        <ul>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+          <li><a href="javascript:void(0)">Terms and Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a id="buttonBackTop">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+  
+
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <h4 class="txt">Please Wait...</h4>
+  </div>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/custom.js"></script>
+  
+</body>
+</html>

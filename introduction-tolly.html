@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Introduction to Tolly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body class="introduction_tolly">
+
+  <!-- Header -->
+  <header class="bg-header">
+    <div class="container d-flex justify-content-between align-items-center header-outer">
+      <div class="d-flex justify-content-start align-items-center header-left">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="d-flex align-items-center">
+            <a class="home-icon d-lg-block d-none" href="index-before-login.html">
+              <img src="./images/home-icon.svg" alt="Home" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Heritage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="club-tour.html">Club Tour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Parties, Conferences and Events</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Venue</a>
+                          <div class="submenu_outer">
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">AC Shamiana</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Balmer Lawrie Lounge & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Banquet Hall & Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Bridge Room</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Club Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Far Pavilion</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Main Lawn</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Pantiles</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Patio 1ST Floor Terrace</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)" class="dropdown-item">Veedol 100 Hall</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Rules</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Available Facilities on Request</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Booking Request</a>
+                        </li>                        
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="sports.html" class="dropdown-item dropdown-toggle">Sports</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Golf</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Table Tennis</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Pickleball</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Squash</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Equestrian</a>
+                        </li>                      
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Swimming</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Gym</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Billiard</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Darts</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Bridge</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Food & Beverage</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">18th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">South Verandah</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Belvedere Dining Hall</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">1895 Oudh</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">9th Shamiana</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Cruickshank Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Club House Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Indigo Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Johnnie Walker Bar</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Flurys Cake Shop</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Don Gloavani</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                  <li class="dropdown-submenu">
+                    <a href="javascript:void(0)" class="dropdown-item dropdown-toggle">Other Facilities</a>
+                    <div class="submenu_outer">
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Library</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Saloon</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Spa</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0)" class="dropdown-item">Proshop</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Accommodation</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="logo">
+        <a href="index-before-login.html">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+      </div>
+      <div class="d-flex justify-content-end align-items-center header-right">
+        <div class="affiliations">
+          <a href="javascript:void(0)">Affiliations</a>
+        </div>
+        <ul class="right-nav">
+          <li>
+            <a href="javascript:void(0)" class="profile-btn dropdown-toggle" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span><img src="./images/user-icon.svg" alt="" /></span>Jhon Doe
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/dashboard-icon.svg" alt=""></span>
+                  Dashboard
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/my-profile.svg" alt=""></span>
+                  My Profile
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="list-icon"><img src="./images/change-pass.svg" alt=""></span>
+                  Change Password
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" id="logoutBtn1">
+                  <span class="list-icon"><img src="./images/logout.svg" alt=""></span>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="payment-btn">Quick Payment</a>
+          </li>
+        </ul>
+        <button class="sidemenu-toggler">
+          <!-- <img src="./images/menu-icon.svg" alt="" /> -->
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 17.9999C0.671573 17.9999 0 17.3284 0 16.4999C0 15.6715 0.671573 14.9999 1.5 14.9999H20.5C21.3284 14.9999 22 15.6715 22 16.4999C22 17.3284 21.3284 17.9999 20.5 17.9999H1.5ZM1.5 10.4999C0.671573 10.4999 0 9.82835 0 8.99992C0 8.1715 0.671573 7.49992 1.5 7.49992H20.5C21.3284 7.49992 22 8.1715 22 8.99992C22 9.82835 21.3284 10.4999 20.5 10.4999H1.5ZM1.5 2.99992C0.671573 2.99992 0 2.32835 0 1.49992C0 0.671497 0.671573 -7.62939e-05 1.5 -7.62939e-05H20.5C21.3284 -7.62939e-05 22 0.671497 22 1.49992C22 2.32835 21.3284 2.99992 20.5 2.99992H1.5Z" fill="#004e24"/>
+          </svg>
+        </button>
+        <div class="side-menu">
+          <div class="close-outer">
+            <button class="sidemenu-close">
+              <img src="./images/close-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-top">
+              <div class="member-login0outer">
+                <div class="member-profile" style="display: none;">
+                  <div class="profile-left">
+                    <div class="profile-image">
+                      <img src="./images/avatars.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="profile-contain">
+                    <h5>Welcome</h5>
+                    <button type="submit" class="btn btn-primary memberLogin">Member’s Login</button>
+                  </div>
+                </div> 
+                <div class="member-profile">
+                  <div class="profile-left">
+                    <div class="profile-image">
+                      <img src="./images/profile-image.jpg" alt="" />
+                    </div>
+                    <div class="profile-image-edit">
+                      <img src="./images/camera.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="profile-contain">
+                    <h5>John Doe</h5>
+                    <p>Prime Member</p>
+                    <ul class="btn-group">
+                      <li>
+                        <a class="btn-link" id="logoutBtn">Logout</a>
+                      </li>
+                      <li>
+                        <a class="btn-link">Change Password</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="search-outer">
+                <input type="search" class="serch-field" placeholder="Search Options" />
+              </div>
+            </div>
+            <div class="sidebar-bottom">
+              <ul class="item-list">
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/dashboard.svg" alt="" /></span> Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/tolly.svg" alt="" /></span> An Introduction to Tolly
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/book.svg" alt="" /></span> Tolly Brand Book
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/fest.svg" alt="" /></span> Tolly Fest - 2025
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/president.svg" alt="" /></span> Letter from the President
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/committees.svg" alt="" /></span> Committees
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/events.svg" alt="" /></span> Events at Tolly
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/tatler.svg" alt="" /></span> Tolly Tatler
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/guidelines.svg" alt="" /></span> Payment Guidelines
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/payment.svg" alt="" /></span> Make Payment
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/feedback.svg" alt="" /></span> Member Feedback
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/download.svg" alt="" /></span> Download
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/update.svg" alt="" /></span> Update Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/directory.svg" alt="" /></span> Members Directory
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/card.svg" alt="" /></span> Apply For Membership Card
+                  </a>
+                </li>
+              </ul>
+              <ul class="item-list">
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/home-2.svg" alt="" /></span> Home
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/courthouse.svg" alt="" /></span> Heritage
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/flag-2.svg" alt="" /></span> Golf
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/ranking.svg" alt="" /></span> Other Sporting Activities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/president2.svg" alt="" /></span> Our Past President
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clipboard-tick.svg" alt="" /></span> Other Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/building-3.svg" alt="" /></span> Accommodation
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/house-2.svg" alt="" /></span> Party & Conference
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/shop.svg" alt="" /></span> Proshop
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/clock.svg" alt="" /></span> Timing for Facilities
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/reserve.svg" alt="" /></span> Food & Beverages
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/radar-2.svg" alt="" /></span> Club Tour
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/gallery.svg" alt="" /></span> Event Gallery
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/message-text.svg" alt="" /></span> Affiliation
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/rules.svg" alt="" /></span> Rules & Regulations
+                  </a>
+                </li> 
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/contact.svg" alt="" /></span> Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <span class="list-icon"><img src="./images/career.svg" alt="" /></span> Career Opportunities
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="rightbar-overlay" data-bs-toggle="collapse" data-bs-target="#sideNavbar" aria-expanded="true"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="banner-slider">
+      <div class="slider-item"><img src="./images/subBanner/gym-banner1.jpg" alt="Slide 1"></div>
+      <div class="slider-item"><img src="./images/subBanner/billiard_banner1.jpg" alt="Slide 2"></div>
+    </section>
+
+    <div class="banner-inner-content">
+      <div class="container">
+        <ul class="bread-come">
+          <li>
+            <a href="javascript:void(0)">Home</a>
+          </li>
+          <li>Introduction to Tolly</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="affiliated-clubs">
+      <div class="container">
+        <div class="page-title">
+          <h4 data-aos="fade-up">An Introduction to Tolly</h4>
+          <p data-aos="fade-up">Tolly was founded in 1895 by William Dixon Cruickshank as an equestrian and horse racing Club. The land was partly acquired and partly leased from Prince Gholam Mohammad Shah,son of Tipu Sultan of Mysore. Prior to the Tipu Sultan family, the land (and what is now the Club house) was the garden house of the Johnson family. The club is named after Colonel William Tolly, who excavated the canal behind the boundary wall of the Club.</p>
+          <p data-aos="fade-up">Over the years the Club has evolved well beyond equestrian activity and is regarded and ranked as one of the top 20 country Clubs in the world. The club offers several sporting facilities ranging from the original equestrian activity to an 18-hole golf course, tennis, pickleball, squash, swimming, table tennis, billiards, bridge and various other indoor games. The Club is spread over 110 acres and has a diverse mix of trees of local varieties and plants brought here from Europe. The Club is home to many different species of local and migratory birds. The wide variety of flora and fauna makes the landscape of the Club look serene and scenic.</p>
+          <p data-aos="fade-up">The club offers its members a wide range of facilities, like a fine-dining experience, restaurants serving a variety of cuisines, open air/ covered serviced areas for members to relax and socialize, shops/ convenio stores/ brand outlets, and an excellent library offering the readers a diverse collection of books and literature covering a wide spectrum of genres and languages. The Club has 67 well-equipped, luxurious rooms for members and guests to stay and enjoy a relaxing experience in an oasis of greenery. The Club offers many indoor and outdoor facilities for members to host both meetings and social events.</p>
+          <p data-aos="fade-up">There is also the Tolly Pro Shop that offers members different Club memorabilia like ties, tee shirts, caps, lapel pins, golf mementoes, books on the history of the Club and more.</p>
+        </div>     
+      </div>
+    </section>
+
+    <section class="sport-details">
+      <div class="container">
+        <div class="sport-details-plate">
+          <div class="sport-nav">
+            <ul>   
+              <li>
+                <a href="#ethosCulture">Ethos and Culture of the Club</a>
+              </li>
+              <li>
+                <a href="#GovernanceManagement">Governance and Management</a>
+              </li>
+              <li>
+                <a href="#RulesRegulations">Rules and Regulations</a>
+              </li>
+              <li>
+                <a href="#ActivitiesFacilities">Activities and Facilities</a>
+              </li>
+              <li>
+                <a href="#ImportantRulesRegulations">Some Important Rules and Regulations</a>
+              </li>
+              <li>
+                <a href="#GuestRules">Guest Rules</a>
+              </li>
+              <li>
+                <a href="#MembersPersonalStaff">Members Personal Staff</a>
+              </li>
+              <li>
+                <a href="#Pets">Pets</a>
+              </li>
+              <li>
+                <a href="#Vehicles">Vehicles</a>
+              </li>
+              <li>
+                <a href="#Tipping">Tipping</a>
+              </li>
+              <li>
+                <a href="#MemberComplaints">Member Complaints</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sport-nav-content">
+            <div class="section" id="ethosCulture">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Ethos and Culture of the Club</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">Tolly is a sports-centric family Club where families often spend the entire day relaxing while using the different facilities the Club has to offer. This makes the Club a second home to members.</p>
+                <p data-aos="fade-up">The staff of the Club have a strong emotional bond with the Club. This makes them serve the members with utmost sincerity and commitment to ensure that every member feels cared for. Some of our staff are even fourth-generation staff serving the Club with the same dedication as their predecessors. Members and staff tend to know each other very well. They treat each other with affection and mutual respect, and care about each other’s families. Together, members and staff comprise the community of Tolly</p>
+                <p data-aos="fade-up">The ethos and spirit of Tolly is characterized by camaraderie and harmony among members. Members, and indeed their families, build life-long friendships with each other at Tolly. This is what makes Tolly particularly unique and special.</p>
+                <p data-aos="fade-up">Tolly members are careful to enjoy the Club responsibly while respecting the privacy of all fellow members and without disturbing the enjoyment of any other member.</p>
+                <p data-aos="fade-up">Members are conscious of the fact that every member is equal in this community and enjoy each other’s company as peers sharing common interests. No member seeks any special privilege and members make it a point not to flaunt their external social/ professional position or standing within the Club. Tipping individual staff members is therefore strictly against the ethos of the Club, for one family member would not seek superior service at home over other family members!</p>
+                <p data-aos="fade-up">Some members enjoy the Club to the fullest. They plan a weekend and book a room at the Tolly Towers or decide to stay in one the cottages. The day begins with a morning walk or a horse ride followed by a refreshing swim. The hunger generated by the swim is satiated fully by the famous Tolly breakfast at the gravel area or the Shamiana while taking in the ambience of the Club environment. If one is interested in sports, the wide array of facilities can be used. A sumptuous lunch at our continental fine dining facility – Belvedere – provides a perfect round-up of the morning session. The library is often a preferred companion for many of our members to spend the afternoon whilst others may prefer to have a nap in the cozy comfort of their rooms. The evening may see a few playing a sport, while others may prefer enjoying a hot steaming cup of tea or coffee enjoying the greenery while sitting at the South Verandah or the Gravel Area / Shamiana. The Club often hosts cultural programs which give members an opportunity to unwind in the evenings. While the elders enjoy the Club in their own ways, the children are not far behind – they have an equally enjoyable day, interacting with other children at the playground or swimming pool or at the several sports facilities.</p>
+                <p data-aos="fade-up">Tolly has been a haven for children for more than a hundred years. Generations of children have grown up at Tolly. Apart from their home and school, Tolly has been the third place where children have spent a large part of their growing up hours. They have also learnt from the multi-cultural environment of the Club and have evolved to become individuals who are respectful and tolerant to diversity. Tolly loves children and is committed to being a fun place for children to grow up in. Tolly is also committed to imparting sports skills to children. Many of our members’ children have grown up to be International, National and State level players in several disciplines like Equestrian, Golf, Tennis, Pickleball, Swimming, Billiards, Squash etc. We have geared and equipped our sports facilities to support best in class training facilities to our members’ children. An integral part of the ethos at Tolly, over the years has also been to keep Tolly a child friendly place.</p>
+                <p data-aos="fade-up">Tolly is a truly cosmopolitan Club. We welcome and embrace diversity. We have members of many different nationalities who reside all over the world. Many of them are frequent visitors and come to India primarily to spend time at Tolly and experience the warmth of its belief in inclusiveness and diversity. Our permanent resident membership base is equally diverse and is a glowing example of the Indian ethos of “Unity in Diversity”. Our diversity of membership is an important dimension of our culture and drives many of our decisions around our social and cultural programmes, our initiatives and activities, our cuisine options and indeed even our architectural and design standards. We respect the fact that every individual member is unique and therefore believe in respecting their diverse values, needs and expectations.</p>
+                <p data-aos="fade-up">Being an institution that has sustained more than a century and a quarter, we have a rich heritage to preserve. We blend our heritage with modernity and remain an institution that is distinguished and progressive.</p>
+                <p data-aos="fade-up">Our commitment to the environment is very strong. We preserve and nurture our green cover and continue to plant dozens of trees every year. We have implemented a ground water harvesting system that recycles our water for use in watering our grounds and gardens. We do not use plastic bottles or plastic containers or bags for our take-away services or for other purposes at the Club. We have installed a solar energy system for heating our swimming pool. We use organic fertilizers as much as possible for nurturing our grounds and gardens.</p>
+                <p data-aos="fade-up">Our members are very particular about keeping our grounds and gardens litter free. We are also committed to keeping our grounds and gardens as natural as possible and minimizing any form of construction. Where we have Shamianas and other structures, we try to ensure that the structures blend in with the natural surrounds. We believe in blending nature with development so that we do not create any ecological imbalance.</p>
+                <p data-aos="fade-up">Apart from horses, Tolly is also home to many small animals and birds. Tolly is the natural habitat for several jackals. These jackal families have been here since long before the Club started. They are protected by law. It is our responsibility to co-exist peacefully with them. The Club provides food for the jackals and this helps to mitigate potential aggression. Our horses and ponies are a huge draw for children. Not just for the children who ride, but many more who like to visit the stables to spend time with the horses.</p>
+                <p data-aos="fade-up">Tolly is not just a second home for the members but is also the second home for four-legged family members of our members. Our members are very often seen visiting the Club with their four-legged family members. Many dogs look forward to visiting Tolly as much as members do. The Club and the members are both sensitively respectful to this co-existence. We even have an annual pet show where members bring and showcase their pets. Prizes are diverse and include prizes for the most lovable pets.</p>
+                <p data-aos="fade-up">Tolly is also home to many stray dogs and cats. Many of them were unfortunately abandoned at the Club premises. The law of the land is very strict about how such animals are treated, and mandates that such animals may not be evicted or relocated and may not be kept in confinement. The Club ensures that each of these animals are neutered and vaccinated. These dogs and cats are much loved by many children and members and have been companions of many members for generations. We are an animal-friendly Club.</p>
+                <p data-aos="fade-up">In keeping up with the reputation of Tolly being one of the top 20 country Clubs in the world, there is a continuous strive to achieve excellence in governance, management, facilities and service. We dream to achieve “Experience Excellence” for all our stakeholders.</p>
+                <ul class="box-thum">
+                  <li>
+                    <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/culture_1.jpg" alt="" />
+                  </li>
+                  <li>
+                    <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/culture_2.jpg" alt="" />
+                  </li>
+                  <li>
+                    <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/culture_3.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section" id="GovernanceManagement">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Governance and Management</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">The club is governed by an elected Board, named the General Committee (GC). The GC holds office for a year. The GC is headed by the President, who is supported by the Vice President. By convention, the immediate Past President is a co-opted member of the GC. The GC is also empowered to co-opt additional members subject to a ceiling.</p>
+                <p data-aos="fade-up">The GC appoints several sub-committees to provide advisory inputs across the different areas of club operations.</p>
+                <p data-aos="fade-up">The club is managed by the CEO and team (management) who are directly responsible for running the club operations.</p>
+                <p data-aos="fade-up">The GC sets policies, provides advisory inputs to the CEO, appoints the CEO and management and holds the management accountable for performance. The GC has the responsibility of setting the vision and providing stewardship towards attainment of that vision.</p>
+                <p data-aos="fade-up">Whilst the GC is elected by the members, the tradition of the club has largely been that the outgoing GC recommends the incoming GC to the members. At times, members outside the GC offer to serve the club on the GC. In such a circumstance, a ballot is held at the AGM. It is the ethos of the club, that under such circumstances, no member of the club would indulge in any divisive conduct whatsoever</p>
+                <p data-aos="fade-up">The President and Vice President are recommended to the members for election by the GC. Under the articles of association of the club, there is no contest for the post of President and Vice-President. By convention, the term of the President is one year, and it is similar for the Vice-President.</p>
+              </div>
+            </div>
+            <div class="section" id="RulesRegulations">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Rules and Regulations</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">The rules and regulations of the club are coded in the Articles of Association and in the By-Laws of the club.</p>
+                <p data-aos="fade-up">In keeping with the culture and tradition of the club, members are themselves extremely conscious and particular to follow any rules that have been put in place. Our members do not need to be reminded of the rules.</p>
+                <p data-aos="fade-up">In general, Tolly being a sports-centric family club, the club is informal and tries to minimize the imposition of rules and regulations through hawk-eye monitoring. It relies far more on self-regulation by members in following etiquette and desired codes of conduct. All the things about our conduct and expected behavior is not documented in black and white but has evolved over time and has been diligently practiced as accepted norms and have evolved to become the tradition of the club in keeping with its culture and stature.</p>
+                <div class="section-description">
+                  <h5 data-aos="fade-up">The fundamental norms are around certain core principles, such as:</h5>
+                  <ul data-aos="fade-up">
+                    <li>Enjoying the club without disturbing fellow members.</li>
+                    <li>Practicing the principle of equality of all members.</li>
+                    <li>Interacting with fellow members and staff with utmost courtesy.</li>
+                    <li>Focusing on building friendships and relationships.</li>
+                    <li>Following the written rules and regulations of the club without exception</li>
+                    <li>Upholding the values and ethos of the Club in our behavior with all our stakeholders.</li>
+                  </ul>
+                  <h5 data-aos="fade-up">Each activity of the club has its own set of rules, norms and traditions. For example, with golf it is expected that:</h5>
+                  <ul data-aos="fade-up">
+                    <li>Members would always follow the dress code.</li>
+                    <li>Be mindful and sensitive about the pace of play.</li>
+                    <li>Not disturb any other golfer on the course.</li>
+                    <li>Not endanger anyone on the golf course.</li>
+                    <li>Always preserve and nurture the golf course.</li>
+                    <li>Not litter the course.</li>
+                    <li>Treat fellow golfers and staff with utmost courtesy.</li>
+                    <li>Keep score scrupulously</li>
+                    <li>Strictly follow the rules of golf and local rules.</li>
+                  </ul>
+                  <p data-aos="fade-up">Similarly, each activity area of the club has its own rules and norms.</p>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="ActivitiesFacilities">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Activities and Facilities</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">Tolly offers facilities for golf, tennis, pickleball, squash, indoor and outdoor swimming, riding and equestrian sports. There is also a well-equipped and extensively used gym with professional instructors. The club has a bridge room, a billiards room, a well-stocked pro-shop, an extensive library, unisex salon.</p>
+                <p data-aos="fade-up">Sports apart, the Club offers members and guests a wide range of entertainment the year round from open-air theatre to music and dancing. Excellent cuisine is available at its restaurants, lawns, pavilions and well-stocked bars. The Club also has a pastry hut and fast-food parlour.</p>
+                <p data-aos="fade-up">The club has 67 air-conditioned suites and residential rooms for Members and their guests, each with an attached bath. The Club offers conference and banqueting facilities with a choice of venues accommodating between 25 and 600 people. There is abundant provision for parking.</p>
+                <p data-aos="fade-up">In our welcome kit to new members, copies of the Articles of Association and the Club ByeLaws are included, to help you familiarize with the Rules and Regulations of the Club.</p>
+                <ul class="box-thum">
+                  <li>
+                    <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/activity_1.jpg" alt="" />
+                  </li>
+                  <li>
+                    <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/activity_2.jpg" alt="" />
+                  </li>
+                  <li>
+                    <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/activity_3.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="section" id="ImportantRulesRegulations">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Some Important Rules and Regulations</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <h6 data-aos="fade-up">Dress Code</h6>
+                <p data-aos="fade-up">The dress code at Tolly has always been tailored to the casual elegance that typifies our sporting traditions and encompasses the ambience of being a family club.</p>
+                <p data-aos="fade-up">The dress code of the Shamiana/ Gravel/ South Verandah to keep the sporting atmosphere live and active, all manner of Sportswear is permitted, including round neck t-shirts and shorts. However, singlets and vests are not permitted in any of the venues and wearing Golf Shoes and Riding Boots in the South Verandah is not permitted.</p>
+                <p data-aos="fade-up">The minimal dress requirement for men in the Gravel area and Shamiana are short-sleeved sports/ bush shirts with shorts, track suits, jeans or trousers.</p>
+                <p data-aos="fade-up">Slippers for men are permitted only in the Shamiana/ Gravel area/ Pantiles and swimming pool areas, but are not permitted in the dining rooms and bars, the billiards and bridge rooms.</p>
+                <p data-aos="fade-up">In the Club Lounge, Bars, Restaurants, Billiards, Bridge Rooms, all varieties of T-shirts including smart round neck t-shirts and jeans are permitted.</p>
+                <p data-aos="fade-up">Shoes and sandals with back strap can also be worn.</p>
+                <p data-aos="fade-up">Shorts and slippers are not permitted in the Dining Rooms, Club Lounge, Bars, Billiards Room and the Bridge Room.</p>
+                <div class="section-description">
+                  <h5 data-aos="fade-up">The following traditional apparel is permitted in all venues of the Club:</h5>
+                  <ul data-aos="fade-up">
+                    <li>Dhoti/Kurta worn with strapped sandals or shoes.</li>
+                    <li>Churidar/Kurta worn with strapped sandals or shoes.</li>
+                    <li>Kurta/ Pyjamas are not permitted in any venues of the Club.</li>
+                  </ul>
+                  <p data-aos="fade-up">In Tolly’s tradition, ladies are free to choose the attire they consider appropriate except that shorts are not permitted in the Bars, Lounge and Restaurants of the Club.</p>
+                  <h5 data-aos="fade-up">Golf</h5>
+                  <h6 data-aos="fade-up"><strong>Dress Code:</strong></h6>
+                  <ul data-aos="fade-up">
+                    <li>Gentlemen – Tucked-in and collared or mock collared t-shirt or shirts, with sleeves</li>
+                    <li>Ladies – Shirts must have collars, shirts designed to be worn outside shorts are acceptable.
+  (T-shirt, vest, football shirts, cropped tops not allowed)</li>
+                    <li>Trouser/ Shorts – Knee length tailored shorts or long trousers.
+  (Blue denim, above knee and football shorts not allowed)</li>
+                    <li>Socks – Long, ankle and trainer socks</li>
+                    <li>Shoes – Proper Golf Shoes (Newly introduced Golf sandals are unacceptable)</li>
+                    <li>Golf Course Timing: 6:00 am to 4:30 pm</li>
+                    <li>Booking Process: For Help Member can call the Golf dept. – 24732316 / 4539 / 4741 / 5954 or 24223053 / 2472 8754 / 8755, Ext. No. 142 OR Book slot through the Tolly App.</li>
+                  </ul>
+                  <ul class="box-thum">
+                    <li>
+                      <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/golf_1.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/golf_2.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/golf_3.jpg" alt="" />
+                    </li>
+                  </ul>
+                  <h5 data-aos="fade-up">Tennis, Pickleball & Squash</h5>
+                  <ul data-aos="fade-up">
+                    <li>Dress Code: T-shirts, shorts, track pants, three quarter pants (pedal pushers) is permitted.
+  (Sleeveless singlet vests are not permitted)</li>
+                    <li>Shoes: proper tennis/ squash shoes (Running/ jogging shoes not permitted as they damage the courts)</li>
+                    <li>Timings: Morning: 6:15 to 9:15 AM / Afternoon: 3:00 to 8:00 PM</li>
+                    <li>Booking Process: Only Players with Pre-booked timings will be permitted to play. No walk-ins are allowed. OR Book slot through the Tolly App</li>
+                  </ul>
+                  <h5 data-aos="fade-up">Swimming</h5>
+                  <ul data-aos="fade-up">
+                    <li>Dress Code: Proper swimming trunks for gentlemen and swimwear for ladies. Members and their guests wearing swimwear must restrict their movement to the area of the indoor and outdoor swimming pools. Use of any other part of the Club premises whilst in swimming apparel is not permitted.</li>
+                    <li>Timings: 6:30 AM to 8:30 PM</li>
+                    <li>Booking Process: Walk In</li>
+                  </ul>
+                  <h5 data-aos="fade-up">Gym</h5>
+                  <ul data-aos="fade-up">
+                    <li>Dress Code: T–shirts, sporting vests, track suits/ track pants, shorts, three quarter Pants (pedal pushers), salwar kameez (without dupattas).</li>
+                    <li>Shoes: Sports shoes inclusive of all running, tennis, squash shoes. (Golf shoes are not permitted)</li>
+                    <li>Timings: 6:00 AM – 9:00 PM</li>
+                    <li>Booking Process: Walk In</li>
+                  </ul>
+                  <h5 data-aos="fade-up">Riding</h5>
+                  <ul data-aos="fade-up">
+                    <li>Dress Code: Riding boots, breeches, helmet</li>
+                    <li>Timings: Morning 6:00 – 8: 30 AM, Evening 4:00 – 6:15 PM</li>
+                  </ul>
+                  <h5 data-aos="fade-up">F & B Services</h5>
+                  <ul data-aos="fade-up">
+                    <li>South Verandah: 8:00 AM to 9:45 PM</li>
+                    <li>Gravel and Shamiana: 6.00 AM to 9.30 PM</li>
+                    <li>Belvedere: Open all week days and Public Holidays (Except on Monday).
+  Lunch – 12:30 to 3:00 PM
+  Dinner – 7:00 to 10:30 PM</li>
+                    <li>1895:
+  Breakfast – 7:30 to 10:30 AM
+  Lunch – 12:30 to 3:30 PM</li>
+                    <li>Indigo Bar: 11:00 AM to 10:30 PM (Tuesday Closed)</li>
+                    <li>Pantiles Bar: Wed, Thus & Fri (4:00 PM to 10:30 PM) Sat, Sun & Mon (11:00 AM to 10:30 PM) (Tuesday Closed)</li>
+                    <li>Cruickshank Bar: Tue, Sat & Sun (11:00 AM to 10:30 PM) and on Wed, Thu & Fri (6:00 PM to 10:30 PM)</li>
+                  </ul>
+                  <p data-aos="fade-up">Timings of the facilities are subject to change and members will be intimated accordingly.</p>
+                  <h5 data-aos="fade-up">Rooms</h5>
+                  <ul data-aos="fade-up">
+                    <li>We have 67 rooms divided into 11 Grandstand Cottages, 18 Tolly Tower Junior Suites, 6 Suites, 32 Tolly Terrace Standard rooms.</li>
+                    <li>Booking Process: Bookings can be made with – rooms@tollygungeclub.org / sudipsengupta@tollygungeclub.org, OR Book room through the Tolly App</li>
+                  </ul>
+                  <ul class="box-thum">
+                    <li>
+                      <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/room_1.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/room_2.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="https://www.tollygungeclub.org/wp-content/uploads/2022/09/room_3.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="GuestRules">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Guest Rules</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">Members, other than Temporary and Reciprocal Members of clubs out of Kolkata, are permitted to entertain guests in the Club subject to Bye-Laws and on payment of such charges as may from time to time be prescribed by the Committee.</p>
+                <p data-aos="fade-up">Members shall in every case pay the expenses of such entertainment and shall be responsible for their guests’ observance of the rules of the Club including dress restrictions.</p>
+                <p data-aos="fade-up">Non-members, other than Permanent Guests, may be admitted to the Club premises only when accompanied by a Member, or his/ her spouse. The Management reserves the right to check all persons entering the Club premises to ensure that only Members and their genuine guests are admitted. Members and their dependents are advised to always carry their Club Cards with them. Members need to sign in their guests prior to the Guest using any facility of the Club. Members found not signing in their guests may attract disciplinary action.</p>
+                <p data-aos="fade-up">Persons introduced as guests should be such who would normally be eligible for Membership of the Club. No Member shall introduce to the Club any person whose presence has been adjudged by the Committee to be undesirable or whose Membership has been cancelled for any reason.</p>
+                <p data-aos="fade-up">A member may introduce visitors to Kolkata as guests to the Club-House and grounds on ordinary occasions, to Club entertainment and dances, and on special occasions, upon such conditions as the Committee may determine. A resident of Kolkata and neighbourhood may be introduced as a guest not more than 12 occasions in a calendar year for any sport and not more than one occasion in a month for any other purpose.</p>
+                <p data-aos="fade-up">Members’ dependent children up to the age of twenty-three years only may use their Membership, provided they have their dependent Cards issued by the Club in their possession when in the Club premises. Beyond the age of twenty-three years Members’ children must conform to Guests Rules.</p>
+                <p data-aos="fade-up">However, Members’ children are permitted to continue use of Club facilities as Dependents, even if they have crossed the age of twenty three years, provided they have applied for Gymkhana Membership and are single; provided further that continuity of usage shall be permitted to such ’Dependent’ till he/ she attains the age of thirty years or up to the date when his/ her name, being on the list of candidates for election as Gymkhana Member, is actually voted for by the Election Committee (whether or not he/she is elected as a result), whichever is earlier.</p>
+                <p data-aos="fade-up">Members’ Dependent children are not entitled to bring Guests.</p>
+              </div>
+            </div>
+            <div class="section" id="MembersPersonalStaff">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Members Personal Staff</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">Personal Domestic Staff are not allowed anywhere on the Club premises except in the Children’s Park and Attendants Enclosure near the Children Park.</p>
+              </div>
+            </div>
+            <div class="section" id="Pets">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Pets</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">Pets must be kept under proper control (in harness); pets are permitted at the Gravel and Main Lawn. Please use the walking track for taking your dog for a walk.</p>
+              </div>
+            </div>
+            <div class="section" id="Vehicles">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Vehicles</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <div class="section-description">
+                  <ul data-aos="fade-up">
+                    <li>All vehicles must be parked in the designated areas.</li>
+                    <li>Flow of traffic is clearly marked and indicated within the club premises. Members must ensure that this is followed.</li>
+                    <li>Members may collect their Car RFID card from the club Office, for automated gate entry and exit.</li>
+                    <li>Blowing of horn within the club premises is strictly prohibited.</li>
+                    <li>Members are requested to see that their cars are driven slowly within the prescribed speed limits inside the Club Grounds and avoid inconvenience to other Members.</li>
+                    <li>All cars (including contents thereof) parked within the Club Premises shall be at the Owner’s risk and the Club shall not be liable for the same.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="section" id="Tipping">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Tipping</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">Tipping of any Club Staff is STRICTLY FORBIDDEN except to an individual engaged as a Caddy. Appreciation of service may be shown by contributing to the Gratuity Boxes placed at various points in the Club. Action will be taken by the Committee under these Bye-Laws on complaints being received that a Member is indulging in tipping Club Staff.</p>
+              </div>
+            </div>
+            <div class="section" id="MemberComplaints">
+              <div class="section-inner">
+                <div class="title">
+                  <h4 data-aos="fade-up">Member Complaints</h4>
+                </div>
+                <div class="section-banner">
+                  <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="300" src="./images/bridge_1_big.jpg" alt="" />
+                </div>
+                <p data-aos="fade-up">Members are advised to refrain from making conduct of a Club employee a matter of personal reprimand/ action by member. All complaints regarding the behavior and conduct of Club employees shall be made in writing to the Managing Member of the Club who shall enquire into the circumstances of the case and act as may be considered necessary and advise the member concerned. Complaint/ Suggestion Books are provided at various locations of the Club. Members may register their complaints/suggestions in the Complaint Books or through the Member Feedback app on the website.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>Copyright @ 2024 tollygungeclub. All Rights Reserved.</p>
+        <ul>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+          <li><a href="javascript:void(0)">Terms and Condition</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a id="buttonBackTop">
+    <i class="fa-solid fa-angle-up"></i>
+  </a>
+
+  <div class="page-loader">
+    <div class="spinner"></div>
+    <h4 class="txt">Please Wait...</h4>
+  </div>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/custom.js"></script>
+ 
+</body>
+</html>
